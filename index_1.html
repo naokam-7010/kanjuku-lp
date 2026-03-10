@@ -1,0 +1,1749 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>春期講習で合格をつかめ | Dr.関塾 祐天寺校</title>
+<meta name="description" content="Dr.関塾 祐天寺校の春期特別無料講習会。2025年3月25日〜4月7日、体験授業90分×2回完全無料。完全個別指導で受験合格を目指す。">
+<style>
+  :root{
+    --primary:#b91c1c;
+    --primary-dark:#991b1b;
+    --navy:#1e3a5f;
+    --accent:#f59e0b;
+    --bg-dark:#0f172a;
+    --text:#1a1a1a;
+    --gray:#64748b;
+    --light:#f8fafc;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:'Hiragino Kaku Gothic ProN','Hiragino Sans','Meiryo',sans-serif;color:var(--text);background:#fff;line-height:1.7;}
+  a{color:inherit;text-decoration:none;}
+
+  /* ===== お知らせバー ===== */
+  .notice-bar{
+    background:var(--primary);
+    color:#fff;
+    text-align:center;
+    padding:8px 16px;
+    font-size:0.82rem;
+    font-weight:700;
+    letter-spacing:0.05em;
+  }
+  .notice-bar span{
+    background:var(--accent);
+    color:#000;
+    padding:2px 8px;
+    margin-right:8px;
+    font-size:0.78rem;
+    border-radius:2px;
+  }
+
+  /* ===== ヘッダー ===== */
+  .header{
+    background:var(--bg-dark);
+    padding:14px 24px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    position:sticky;
+    top:0;
+    z-index:100;
+    border-bottom:3px solid var(--primary);
+  }
+  .logo{
+    color:#fff;
+    font-size:1.15rem;
+    font-weight:900;
+    letter-spacing:0.03em;
+  }
+  .logo span{color:var(--primary);}
+  .header-contact{
+    display:flex;
+    align-items:center;
+    gap:20px;
+  }
+  .header-tel{
+    color:#fff;
+    font-size:1.25rem;
+    font-weight:900;
+    letter-spacing:0.05em;
+  }
+  .header-tel small{
+    display:block;
+    font-size:0.65rem;
+    font-weight:400;
+    color:#94a3b8;
+    letter-spacing:0.03em;
+  }
+  .btn-cta{
+    background:var(--primary);
+    color:#fff;
+    padding:10px 22px;
+    font-size:0.85rem;
+    font-weight:700;
+    border:none;
+    border-radius:4px;
+    cursor:pointer;
+    transition:background 0.2s;
+    display:inline-block;
+    letter-spacing:0.03em;
+  }
+  .btn-cta:hover{background:var(--primary-dark);}
+
+  /* ===== ヒーロー ===== */
+  .hero{
+    background:linear-gradient(135deg, var(--bg-dark) 0%, #1e3a5f 60%, #2d1515 100%);
+    color:#fff;
+    padding:80px 24px 90px;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::before{
+    content:'';
+    position:absolute;
+    top:-60px;right:-80px;
+    width:480px;height:480px;
+    background:radial-gradient(circle, rgba(185,28,28,0.25) 0%, transparent 70%);
+    pointer-events:none;
+  }
+  .hero::after{
+    content:'';
+    position:absolute;
+    bottom:-80px;left:-60px;
+    width:360px;height:360px;
+    background:radial-gradient(circle, rgba(245,158,11,0.12) 0%, transparent 70%);
+    pointer-events:none;
+  }
+  .hero-inner{max-width:900px;margin:0 auto;position:relative;z-index:1;}
+  .hero-badge{
+    display:inline-block;
+    background:var(--accent);
+    color:#000;
+    font-size:0.78rem;
+    font-weight:800;
+    padding:4px 14px;
+    margin-bottom:20px;
+    letter-spacing:0.08em;
+    border-radius:2px;
+  }
+  .hero-title{
+    font-size:3.2rem;
+    font-weight:900;
+    line-height:1.2;
+    margin-bottom:24px;
+    letter-spacing:-0.01em;
+  }
+  .hero-title .accent{color:var(--primary);}
+  .hero-title .accent2{color:var(--accent);}
+  .hero-sub{
+    font-size:1.1rem;
+    color:#cbd5e1;
+    margin-bottom:36px;
+    max-width:600px;
+    line-height:1.8;
+  }
+  .hero-free{
+    display:inline-flex;
+    align-items:center;
+    gap:16px;
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.2);
+    border-radius:4px;
+    padding:18px 28px;
+    margin-bottom:36px;
+  }
+  .hero-free .free-label{
+    font-size:2.8rem;
+    font-weight:900;
+    color:var(--accent);
+    line-height:1;
+  }
+  .hero-free .free-desc{
+    font-size:0.9rem;
+    color:#e2e8f0;
+    line-height:1.6;
+  }
+  .hero-free .free-desc strong{color:#fff;}
+  .hero-cta{
+    display:flex;
+    gap:16px;
+    flex-wrap:wrap;
+    align-items:center;
+  }
+  .btn-hero{
+    background:var(--primary);
+    color:#fff;
+    padding:18px 36px;
+    font-size:1.05rem;
+    font-weight:900;
+    border:none;
+    border-radius:4px;
+    cursor:pointer;
+    transition:all 0.2s;
+    letter-spacing:0.05em;
+    display:inline-block;
+  }
+  .btn-hero:hover{background:var(--primary-dark);transform:translateY(-1px);}
+  .btn-hero-sub{
+    color:#94a3b8;
+    font-size:0.82rem;
+    line-height:1.5;
+  }
+  .hero-period{
+    margin-top:28px;
+    padding-top:24px;
+    border-top:1px solid rgba(255,255,255,0.1);
+    font-size:0.85rem;
+    color:#94a3b8;
+  }
+  .hero-period strong{color:#fff;}
+
+  /* ===== カウンター ===== */
+  .counter-section{
+    background:var(--navy);
+    padding:60px 24px;
+    color:#fff;
+  }
+  .counter-inner{max-width:900px;margin:0 auto;}
+  .counter-title{
+    text-align:center;
+    font-size:0.8rem;
+    letter-spacing:0.15em;
+    color:#94a3b8;
+    margin-bottom:40px;
+    text-transform:uppercase;
+  }
+  .counter-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:2px;
+    background:rgba(255,255,255,0.08);
+    border-radius:4px;
+    overflow:hidden;
+  }
+  .counter-item{
+    background:rgba(30,58,95,0.9);
+    padding:32px 20px;
+    text-align:center;
+  }
+  .counter-num{
+    font-size:3.5rem;
+    font-weight:900;
+    color:var(--primary);
+    line-height:1;
+    margin-bottom:8px;
+    letter-spacing:-0.02em;
+  }
+  .counter-num .unit{font-size:1.4rem;font-weight:700;}
+  .counter-label{
+    font-size:0.78rem;
+    color:#94a3b8;
+    letter-spacing:0.05em;
+  }
+  .counter-note{
+    text-align:center;
+    margin-top:20px;
+    font-size:0.75rem;
+    color:#64748b;
+  }
+
+  /* ===== セクション共通 ===== */
+  .section{padding:80px 24px;}
+  .section-inner{max-width:900px;margin:0 auto;}
+  .section-label{
+    font-size:0.75rem;
+    letter-spacing:0.15em;
+    color:var(--primary);
+    font-weight:700;
+    text-transform:uppercase;
+    margin-bottom:12px;
+  }
+  .section-title{
+    font-size:2rem;
+    font-weight:900;
+    line-height:1.3;
+    margin-bottom:16px;
+    letter-spacing:-0.01em;
+  }
+  .section-title .hl{
+    color:var(--primary);
+    border-bottom:3px solid var(--accent);
+    padding-bottom:2px;
+  }
+  .section-lead{
+    font-size:0.95rem;
+    color:var(--gray);
+    margin-bottom:48px;
+    line-height:1.8;
+  }
+
+  /* ===== ペインポイント ===== */
+  .pain-section{background:#f8fafc;border-top:4px solid var(--primary);}
+  .pain-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:16px;
+    margin-bottom:40px;
+  }
+  .pain-item{
+    background:#fff;
+    border-left:4px solid var(--primary);
+    padding:16px 20px;
+    border-radius:0 4px 4px 0;
+    display:flex;
+    align-items:flex-start;
+    gap:12px;
+    box-shadow:0 1px 4px rgba(0,0,0,0.06);
+  }
+  .pain-icon{
+    font-size:1.4rem;
+    flex-shrink:0;
+    margin-top:2px;
+  }
+  .pain-text{font-size:0.9rem;font-weight:600;line-height:1.5;}
+  .pain-answer{
+    background:var(--navy);
+    color:#fff;
+    padding:28px 36px;
+    border-radius:4px;
+    text-align:center;
+    font-size:1.05rem;
+    font-weight:700;
+    line-height:1.7;
+  }
+  .pain-answer span{color:var(--accent);}
+
+  /* ===== 選ばれる理由 ===== */
+  .reason-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:24px;
+  }
+  .reason-card{
+    background:#fff;
+    border:2px solid #e2e8f0;
+    border-radius:4px;
+    padding:28px;
+    position:relative;
+    overflow:hidden;
+    transition:border-color 0.2s,box-shadow 0.2s;
+  }
+  .reason-card:hover{border-color:var(--primary);box-shadow:0 4px 16px rgba(185,28,28,0.08);}
+  .reason-card::before{
+    content:'';
+    position:absolute;
+    top:0;left:0;right:0;
+    height:3px;
+    background:var(--primary);
+  }
+  .reason-num{
+    font-size:3rem;
+    font-weight:900;
+    color:rgba(185,28,28,0.1);
+    line-height:1;
+    position:absolute;
+    top:12px;right:20px;
+    font-family:Georgia,serif;
+  }
+  .reason-title{
+    font-size:1.1rem;
+    font-weight:900;
+    margin-bottom:10px;
+    line-height:1.4;
+  }
+  .reason-title span{color:var(--primary);}
+  .reason-body{font-size:0.88rem;color:var(--gray);line-height:1.7;}
+  .reason-tag{
+    display:inline-block;
+    background:rgba(185,28,28,0.08);
+    color:var(--primary);
+    font-size:0.72rem;
+    font-weight:700;
+    padding:3px 10px;
+    border-radius:2px;
+    margin-bottom:12px;
+  }
+
+  /* ===== 比較テーブル ===== */
+  .compare-section{background:var(--bg-dark);color:#fff;}
+  .compare-table{
+    width:100%;
+    border-collapse:collapse;
+    border-radius:4px;
+    overflow:hidden;
+  }
+  .compare-table th{
+    padding:18px 16px;
+    font-size:0.88rem;
+    font-weight:700;
+    text-align:center;
+  }
+  .compare-table th:first-child{background:rgba(255,255,255,0.05);color:#94a3b8;}
+  .compare-table th:nth-child(2){background:rgba(255,255,255,0.08);color:#94a3b8;}
+  .compare-table th:nth-child(3){background:rgba(255,255,255,0.08);color:#94a3b8;}
+  .compare-table th:last-child{background:var(--primary);color:#fff;}
+  .compare-table td{
+    padding:14px 16px;
+    font-size:0.88rem;
+    text-align:center;
+    border-bottom:1px solid rgba(255,255,255,0.06);
+  }
+  .compare-table tr:last-child td{border-bottom:none;}
+  .compare-table td:first-child{
+    text-align:left;
+    color:#cbd5e1;
+    background:rgba(255,255,255,0.03);
+    font-weight:600;
+    padding-left:20px;
+  }
+  .compare-table td:nth-child(2){color:#64748b;}
+  .compare-table td:nth-child(3){color:#94a3b8;}
+  .compare-table td:last-child{background:rgba(185,28,28,0.1);font-weight:700;}
+  .compare-table tr:hover td{background-color:rgba(255,255,255,0.03);}
+  .compare-table tr:hover td:last-child{background:rgba(185,28,28,0.15);}
+  .check{color:#22c55e;font-size:1.1rem;font-weight:900;}
+  .cross{color:#64748b;font-size:1rem;}
+  .triangle{color:var(--accent);font-size:1rem;}
+  .compare-note{
+    text-align:center;
+    margin-top:20px;
+    font-size:0.75rem;
+    color:#475569;
+  }
+
+  /* ===== コース ===== */
+  .course-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+  }
+  .course-card{
+    border:2px solid #e2e8f0;
+    border-radius:4px;
+    overflow:hidden;
+  }
+  .course-head{
+    padding:18px 20px;
+    font-weight:900;
+    font-size:1rem;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .course-head.elem{background:#1e3a5f;}
+  .course-head.mid{background:var(--primary-dark);}
+  .course-head.high{background:var(--bg-dark);}
+  .course-grade{
+    font-size:0.72rem;
+    opacity:0.8;
+    font-weight:400;
+    display:block;
+    margin-top:2px;
+  }
+  .course-body{padding:20px;}
+  .course-tag{
+    display:inline-block;
+    background:#f1f5f9;
+    color:#475569;
+    font-size:0.72rem;
+    padding:3px 8px;
+    border-radius:2px;
+    margin:2px 2px 2px 0;
+  }
+  .course-feature{
+    margin-top:14px;
+    font-size:0.84rem;
+    color:var(--gray);
+    line-height:1.7;
+  }
+
+  /* ===== 声 ===== */
+  .voice-section{background:#f8fafc;border-top:1px solid #e2e8f0;}
+  .voice-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .voice-card{
+    background:#fff;
+    border:1px solid #e2e8f0;
+    border-radius:4px;
+    padding:24px;
+    position:relative;
+  }
+  .voice-card::before{
+    content:'"';
+    position:absolute;
+    top:10px;left:14px;
+    font-size:3rem;
+    color:rgba(185,28,28,0.15);
+    font-family:Georgia,serif;
+    line-height:1;
+  }
+  .voice-score{
+    background:var(--primary);
+    color:#fff;
+    font-size:0.82rem;
+    font-weight:900;
+    padding:4px 12px;
+    border-radius:2px;
+    display:inline-block;
+    margin-bottom:14px;
+  }
+  .voice-text{
+    font-size:0.88rem;
+    line-height:1.8;
+    color:#334155;
+    margin-bottom:16px;
+    padding-top:8px;
+  }
+  .voice-name{
+    font-size:0.78rem;
+    color:var(--gray);
+    font-weight:600;
+    border-top:1px solid #e2e8f0;
+    padding-top:12px;
+  }
+
+  /* ===== 春期講習 ===== */
+  .spring-section{
+    background:linear-gradient(135deg, var(--bg-dark), var(--navy));
+    color:#fff;
+  }
+  .spring-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;}
+  .spring-title{font-size:2rem;font-weight:900;margin-bottom:24px;line-height:1.3;}
+  .spring-title span{color:var(--accent);}
+  .spring-list{list-style:none;margin-bottom:32px;}
+  .spring-list li{
+    display:flex;
+    align-items:flex-start;
+    gap:12px;
+    padding:12px 0;
+    border-bottom:1px solid rgba(255,255,255,0.08);
+    font-size:0.92rem;
+  }
+  .spring-list li:last-child{border-bottom:none;}
+  .spring-list .s-icon{
+    background:var(--accent);
+    color:#000;
+    font-size:0.72rem;
+    font-weight:900;
+    padding:2px 6px;
+    border-radius:2px;
+    flex-shrink:0;
+    margin-top:3px;
+  }
+  .spring-box{
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.15);
+    border-radius:4px;
+    padding:28px;
+  }
+  .spring-box-title{
+    font-size:0.75rem;
+    letter-spacing:0.1em;
+    color:#94a3b8;
+    margin-bottom:16px;
+  }
+  .spring-fee{
+    font-size:2.8rem;
+    font-weight:900;
+    color:var(--accent);
+    line-height:1;
+    margin-bottom:8px;
+  }
+  .spring-fee small{font-size:1.1rem;font-weight:400;color:#94a3b8;}
+  .spring-fee-note{
+    font-size:0.82rem;
+    color:#94a3b8;
+    margin-bottom:24px;
+    line-height:1.6;
+  }
+  .spring-dl{display:flex;flex-direction:column;gap:12px;}
+  .spring-dl-item{display:flex;gap:0;}
+  .spring-dl dt{
+    background:rgba(255,255,255,0.1);
+    font-size:0.78rem;
+    font-weight:700;
+    padding:8px 12px;
+    color:#94a3b8;
+    min-width:80px;
+    display:flex;
+    align-items:center;
+  }
+  .spring-dl dd{
+    background:rgba(255,255,255,0.05);
+    font-size:0.88rem;
+    padding:8px 14px;
+    flex:1;
+    display:flex;
+    align-items:center;
+  }
+  .gift-box{
+    margin-top:20px;
+    background:rgba(245,158,11,0.1);
+    border:1px solid rgba(245,158,11,0.3);
+    border-radius:4px;
+    padding:16px 20px;
+    font-size:0.88rem;
+    line-height:1.6;
+  }
+  .gift-box strong{color:var(--accent);}
+
+  /* ===== FAQ ===== */
+  .faq-section{background:#f8fafc;}
+  .faq-list{display:flex;flex-direction:column;gap:4px;}
+  .faq-item{
+    background:#fff;
+    border:1px solid #e2e8f0;
+    border-radius:4px;
+    overflow:hidden;
+  }
+  .faq-q{
+    display:flex;
+    align-items:center;
+    gap:16px;
+    padding:18px 24px;
+    cursor:pointer;
+    font-size:0.95rem;
+    font-weight:700;
+    user-select:none;
+    transition:background 0.15s;
+  }
+  .faq-q:hover{background:#f8fafc;}
+  .faq-q .q-mark{
+    background:var(--primary);
+    color:#fff;
+    font-size:0.78rem;
+    font-weight:900;
+    width:28px;height:28px;
+    display:flex;align-items:center;justify-content:center;
+    border-radius:2px;
+    flex-shrink:0;
+  }
+  .faq-q .faq-arrow{
+    margin-left:auto;
+    font-size:0.75rem;
+    color:var(--gray);
+    transition:transform 0.2s;
+    flex-shrink:0;
+  }
+  .faq-item.open .faq-arrow{transform:rotate(180deg);}
+  .faq-a{
+    display:none;
+    padding:0 24px 20px 68px;
+    font-size:0.9rem;
+    color:#475569;
+    line-height:1.8;
+  }
+  .faq-item.open .faq-a{display:block;}
+
+  /* ===== アクセス ===== */
+  .access-section{border-top:1px solid #e2e8f0;}
+  .access-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;}
+  .access-map{
+    background:#dce8f5;
+    border:2px dashed #90b8d8;
+    border-radius:4px;
+    height:300px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#666;
+    font-size:0.85rem;
+    text-align:center;
+  }
+  .access-info{display:flex;flex-direction:column;gap:16px;}
+  .access-dl dt{
+    font-size:0.72rem;
+    letter-spacing:0.1em;
+    color:var(--gray);
+    font-weight:700;
+    margin-bottom:4px;
+    text-transform:uppercase;
+  }
+  .access-dl dd{
+    font-size:0.95rem;
+    font-weight:600;
+    padding-bottom:16px;
+    border-bottom:1px solid #e2e8f0;
+  }
+  .access-dl dd:last-child{border-bottom:none;}
+
+  /* ===== 申込フォーム ===== */
+  .form-section{background:var(--bg-dark);color:#fff;}
+  .form-header{text-align:center;margin-bottom:40px;}
+  .form-header .section-label{color:var(--accent);}
+  .form-header .section-title{color:#fff;}
+
+  /* ステップインジケーター */
+  .step-indicator{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:40px;
+    gap:0;
+  }
+  .si-item{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:6px;
+    position:relative;
+  }
+  .si-circle{
+    width:40px;height:40px;
+    border-radius:50%;
+    border:2px solid #334155;
+    background:transparent;
+    display:flex;align-items:center;justify-content:center;
+    font-size:0.85rem;
+    font-weight:700;
+    color:#64748b;
+    transition:all 0.3s;
+  }
+  .si-item.active .si-circle{background:var(--primary);border-color:var(--primary);color:#fff;}
+  .si-item.done .si-circle{background:#334155;border-color:#334155;color:#94a3b8;}
+  .si-label{font-size:0.68rem;color:#64748b;text-align:center;white-space:nowrap;}
+  .si-item.active .si-label{color:#fff;}
+  .si-line{
+    width:60px;height:2px;
+    background:#1e293b;
+    transition:background 0.3s;
+    margin-bottom:20px;
+  }
+  .si-line.done{background:var(--primary);}
+
+  /* ステップパネル */
+  .step-panels{max-width:640px;margin:0 auto;}
+  [data-p]{display:none;}
+  [data-p].sp-active{display:block;}
+  .sp-title{
+    font-size:1.2rem;
+    font-weight:900;
+    text-align:center;
+    margin-bottom:8px;
+    color:#fff;
+  }
+  .sp-sub{
+    font-size:0.85rem;
+    color:#94a3b8;
+    text-align:center;
+    margin-bottom:28px;
+  }
+
+  /* STEP1 科目選択 */
+  .subj-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:12px;
+    margin-bottom:28px;
+  }
+  .subj-btn{
+    background:rgba(255,255,255,0.05);
+    border:2px solid #334155;
+    border-radius:4px;
+    padding:18px 10px;
+    color:#cbd5e1;
+    font-size:0.9rem;
+    font-weight:700;
+    cursor:pointer;
+    text-align:center;
+    transition:all 0.15s;
+  }
+  .subj-btn:hover{border-color:var(--primary);background:rgba(185,28,28,0.1);}
+  .subj-btn.sel{border-color:var(--primary);background:rgba(185,28,28,0.2);color:#fff;}
+  .subj-btn .subj-icon{font-size:1.5rem;display:block;margin-bottom:6px;}
+
+  /* STEP2 学年選択 */
+  .grade-group{margin-bottom:20px;}
+  .grade-group-label{
+    font-size:0.72rem;
+    letter-spacing:0.1em;
+    color:#64748b;
+    font-weight:700;
+    margin-bottom:10px;
+  }
+  .grade-row{display:flex;gap:8px;flex-wrap:wrap;}
+  .grade-btn{
+    background:rgba(255,255,255,0.05);
+    border:2px solid #334155;
+    border-radius:4px;
+    padding:10px 18px;
+    color:#94a3b8;
+    font-size:0.88rem;
+    font-weight:700;
+    cursor:pointer;
+    transition:all 0.15s;
+  }
+  .grade-btn:hover{border-color:var(--primary);}
+  .grade-btn.sel{border-color:var(--primary);background:rgba(185,28,28,0.2);color:#fff;}
+
+  /* STEP3 時間選択 */
+  .time-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:12px;
+    margin-bottom:28px;
+  }
+  .time-btn{
+    background:rgba(255,255,255,0.05);
+    border:2px solid #334155;
+    border-radius:4px;
+    padding:18px 10px;
+    color:#94a3b8;
+    font-size:0.85rem;
+    font-weight:700;
+    cursor:pointer;
+    text-align:center;
+    transition:all 0.15s;
+    line-height:1.5;
+  }
+  .time-btn span{font-size:0.78rem;font-weight:400;color:#64748b;display:block;margin-top:4px;}
+  .time-btn:hover{border-color:var(--primary);}
+  .time-btn.sel{border-color:var(--primary);background:rgba(185,28,28,0.2);color:#fff;}
+  .time-btn.sel span{color:#fca5a5;}
+
+  /* STEP4 入力フォーム */
+  .form-fields{display:flex;flex-direction:column;gap:16px;margin-bottom:28px;}
+  .field-group{display:flex;flex-direction:column;gap:6px;}
+  .field-label{
+    font-size:0.78rem;
+    font-weight:700;
+    color:#94a3b8;
+    letter-spacing:0.05em;
+  }
+  .field-label .req{
+    background:var(--primary);
+    color:#fff;
+    font-size:0.65rem;
+    padding:1px 5px;
+    border-radius:2px;
+    margin-left:6px;
+  }
+  .field-input{
+    background:rgba(255,255,255,0.06);
+    border:1px solid #334155;
+    border-radius:4px;
+    padding:12px 16px;
+    font-size:0.9rem;
+    color:#fff;
+    width:100%;
+    transition:border-color 0.15s;
+    font-family:inherit;
+  }
+  .field-input:focus{outline:none;border-color:var(--primary);}
+  .field-input::placeholder{color:#475569;}
+  .form-agree{
+    font-size:0.8rem;
+    color:#64748b;
+    text-align:center;
+    margin-bottom:20px;
+    line-height:1.6;
+  }
+  .form-agree a{color:var(--accent);text-decoration:underline;}
+
+  /* フォームナビ */
+  .step-nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:16px;
+    margin-top:8px;
+  }
+  .btn-back{
+    background:transparent;
+    border:1px solid #334155;
+    border-radius:4px;
+    color:#64748b;
+    padding:12px 24px;
+    font-size:0.88rem;
+    cursor:pointer;
+    transition:border-color 0.15s;
+  }
+  .btn-back:hover{border-color:#94a3b8;}
+  .btn-next{
+    background:var(--primary);
+    border:none;
+    border-radius:4px;
+    color:#fff;
+    padding:14px 32px;
+    font-size:0.95rem;
+    font-weight:900;
+    cursor:pointer;
+    transition:background 0.2s;
+    flex:1;
+  }
+  .btn-next:hover:not(:disabled){background:var(--primary-dark);}
+  .btn-next:disabled{background:#334155;color:#64748b;cursor:not-allowed;}
+  .btn-submit{
+    background:var(--accent);
+    border:none;
+    border-radius:4px;
+    color:#000;
+    padding:16px 32px;
+    font-size:1rem;
+    font-weight:900;
+    cursor:pointer;
+    transition:background 0.2s;
+    flex:1;
+    letter-spacing:0.03em;
+  }
+  .btn-submit:hover{background:#d97706;}
+
+  /* ===== フッター ===== */
+  .footer{
+    background:#0a0f1e;
+    color:#94a3b8;
+    padding:48px 24px 24px;
+  }
+  .footer-inner{max-width:900px;margin:0 auto;}
+  .footer-top{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:32px;
+    margin-bottom:40px;
+    padding-bottom:40px;
+    border-bottom:1px solid #1e293b;
+  }
+  .footer-logo{
+    font-size:1rem;
+    font-weight:900;
+    color:#fff;
+    margin-bottom:12px;
+  }
+  .footer-logo span{color:var(--primary);}
+  .footer-desc{font-size:0.8rem;line-height:1.7;}
+  .footer-col-title{
+    font-size:0.78rem;
+    letter-spacing:0.1em;
+    color:#64748b;
+    font-weight:700;
+    margin-bottom:14px;
+    text-transform:uppercase;
+  }
+  .footer-info{display:flex;flex-direction:column;gap:8px;font-size:0.82rem;}
+  .footer-info dt{color:#64748b;font-size:0.72rem;}
+  .footer-info dd{color:#cbd5e1;font-weight:600;}
+  .footer-bottom{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:0.75rem;
+    gap:16px;
+    flex-wrap:wrap;
+  }
+  .footer-bottom a{color:#475569;transition:color 0.15s;}
+  .footer-bottom a:hover{color:#94a3b8;}
+
+  /* ===== スティッキーCTAバー ===== */
+  #stickyBar{
+    position:fixed;
+    bottom:0;left:0;right:0;
+    background:var(--primary);
+    padding:14px 24px;
+    z-index:200;
+    transform:translateY(100%);
+    transition:transform 0.3s;
+    box-shadow:0 -4px 20px rgba(0,0,0,0.3);
+  }
+  #stickyBar.show{transform:translateY(0);}
+  .sticky-inner{
+    max-width:900px;
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+  }
+  .sticky-text{
+    color:#fff;
+    font-size:0.9rem;
+    font-weight:700;
+    line-height:1.4;
+  }
+  .sticky-text small{font-size:0.72rem;font-weight:400;opacity:0.85;}
+  .btn-sticky{
+    background:#fff;
+    color:var(--primary);
+    padding:12px 28px;
+    font-size:0.95rem;
+    font-weight:900;
+    border:none;
+    border-radius:4px;
+    cursor:pointer;
+    white-space:nowrap;
+    transition:background 0.15s;
+    flex-shrink:0;
+  }
+  .btn-sticky:hover{background:#f1f5f9;}
+
+  /* ===== レスポンシブ ===== */
+  @media(max-width:768px){
+    .header{padding:12px 16px;}
+    .header-contact{gap:10px;}
+    .header-tel{font-size:1rem;}
+    .btn-cta{padding:8px 14px;font-size:0.78rem;}
+    .hero{padding:52px 16px 60px;}
+    .hero-title{font-size:1.9rem;}
+    .hero-free{flex-direction:column;align-items:flex-start;gap:8px;padding:16px 20px;}
+    .hero-free .free-label{font-size:2.2rem;}
+    .counter-grid{grid-template-columns:repeat(2,1fr);}
+    .counter-num{font-size:2.6rem;}
+    .section{padding:52px 16px;}
+    .section-title{font-size:1.5rem;}
+    .pain-grid{grid-template-columns:1fr;}
+    .pain-answer{padding:20px 24px;}
+    .reason-grid{grid-template-columns:1fr;}
+    .compare-table{font-size:0.78rem;}
+    .compare-table th,.compare-table td{padding:10px 8px;}
+    .course-grid{grid-template-columns:1fr;}
+    .voice-grid{grid-template-columns:1fr;}
+    .spring-grid{grid-template-columns:1fr;}
+    .access-grid{grid-template-columns:1fr;}
+    .footer-top{grid-template-columns:1fr;}
+    .footer-bottom{flex-direction:column;align-items:flex-start;gap:8px;}
+    .subj-grid{grid-template-columns:repeat(2,1fr);}
+    .time-grid{grid-template-columns:repeat(2,1fr);}
+    .sticky-inner{flex-direction:column;gap:10px;text-align:center;}
+    .si-line{width:32px;}
+    .step-nav{flex-direction:column;}
+    .btn-next,.btn-back,.btn-submit{width:100%;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== お知らせバー ===== -->
+<div class="notice-bar">
+  <span>限定受付中</span>
+  春期特別無料講習会 3/25(火)〜4/7(月) ｜ 体験授業90分×2回 <strong>完全無料</strong>（教材費込み）
+</div>
+
+<!-- ===== ヘッダー ===== -->
+<header class="header">
+  <div class="logo"><span>Dr.</span>関塾 祐天寺校</div>
+  <div class="header-contact">
+    <div class="header-tel">
+      <small>受付 月〜金 15:00〜21:50</small>
+      03-5734-1901
+    </div>
+    <a href="#form" class="btn-cta">今すぐ無料体験</a>
+  </div>
+</header>
+
+<!-- ===== ヒーロー ===== -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">2025 SPRING COURSE — 3/25〜4/7</div>
+    <h1 class="hero-title">
+      春期講習で、<br>
+      <span class="accent">合格</span>をつかめ。<br>
+      <span class="accent2" style="font-size:0.65em;">差をつける90日が始まる。</span>
+    </h1>
+    <p class="hero-sub">
+      完全個別指導で「わからない」をゼロに。Dr.関塾 祐天寺校は、生徒2名に対して講師1名。<br>
+      あなただけのペースで、志望校合格への最短ルートを走り抜ける。
+    </p>
+    <div class="hero-free">
+      <div class="free-label">¥0</div>
+      <div class="free-desc">
+        <strong>春期特別無料講習会</strong><br>
+        体験授業 90分 × 2回 ＋ 教材費 すべて無料<br>
+        通常期は教材費1,000円のみ
+      </div>
+    </div>
+    <div class="hero-cta">
+      <a href="#form" class="btn-hero">今すぐ差をつける → 無料体験を予約</a>
+    </div>
+    <div class="hero-period">
+      <strong>受付中：2025年3月25日(火)〜4月7日(月)</strong>
+      ｜ 東急東横線「祐天寺駅」徒歩圏内 ｜ 03-5734-1901
+    </div>
+  </div>
+</section>
+
+<!-- ===== 合格実績カウンター ===== -->
+<section class="counter-section">
+  <div class="counter-inner">
+    <p class="counter-title">Numbers — 数字で見るDr.関塾の実力</p>
+    <div class="counter-grid">
+      <div class="counter-item">
+        <div class="counter-num">9<span class="unit">年</span></div>
+        <div class="counter-label">祐天寺での指導実績<br>（2016年開校）</div>
+      </div>
+      <div class="counter-item">
+        <div class="counter-num">2<span class="unit">名</span></div>
+        <div class="counter-label">生徒2名に対して<br>講師1名の個別指導</div>
+      </div>
+      <div class="counter-item">
+        <div class="counter-num">90<span class="unit">分</span></div>
+        <div class="counter-label">集中して学べる<br>1コマ90分授業</div>
+      </div>
+      <div class="counter-item">
+        <div class="counter-num">20<span class="unit">点↑</span></div>
+        <div class="counter-label">数学3ヶ月で<br>スコアアップ実績</div>
+      </div>
+    </div>
+    <p class="counter-note">※スコアアップ実績はA.M様（中3）の保護者コメントに基づきます</p>
+  </div>
+</section>
+
+<!-- ===== ペインポイント ===== -->
+<section class="section pain-section">
+  <div class="section-inner">
+    <div class="section-label">Pain Points</div>
+    <h2 class="section-title">こんな悩みを<span class="hl">抱えていませんか？</span></h2>
+    <div class="pain-grid">
+      <div class="pain-item">
+        <div class="pain-icon">📉</div>
+        <div class="pain-text">成績が上がらない。何が原因かさえわからない</div>
+      </div>
+      <div class="pain-item">
+        <div class="pain-icon">🙋</div>
+        <div class="pain-text">集団塾では質問できず、授業についていけない</div>
+      </div>
+      <div class="pain-item">
+        <div class="pain-icon">🎓</div>
+        <div class="pain-text">高校・大学受験に向けて何から手をつければいい？</div>
+      </div>
+      <div class="pain-item">
+        <div class="pain-icon">📋</div>
+        <div class="pain-text">内申点を上げたいがどう対策すればいいかわからない</div>
+      </div>
+      <div class="pain-item">
+        <div class="pain-icon">😴</div>
+        <div class="pain-text">子どものやる気がなく、学習習慣が身についていない</div>
+      </div>
+      <div class="pain-item">
+        <div class="pain-icon">🔍</div>
+        <div class="pain-text">塾選びで失敗したくない。まず試してみたい</div>
+      </div>
+    </div>
+    <div class="pain-answer">
+      その悩み、<span>Dr.関塾の完全個別指導</span>が解決します。<br>
+      まずは無料体験で、あなたに合った学び方を見つけてください。
+    </div>
+  </div>
+</section>
+
+<!-- ===== 選ばれる4つの理由 ===== -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-label">Why Dr.関塾</div>
+    <h2 class="section-title">選ばれる<span class="hl">4つの理由</span></h2>
+    <p class="section-lead">「なぜここを選ぶのか」—— 保護者と生徒が実感した、Dr.関塾ならではの強みがあります。</p>
+    <div class="reason-grid">
+      <div class="reason-card">
+        <div class="reason-num">01</div>
+        <div class="reason-tag">完全個別指導</div>
+        <h3 class="reason-title"><span>生徒2名：講師1名</span>の密度の高い指導</h3>
+        <p class="reason-body">集団授業とは異なり、わからない問題はその場でゼロにします。講師が生徒の理解状況をリアルタイムで把握し、一人ひとりに合わせた説明で「わかった！」を積み重ねます。</p>
+      </div>
+      <div class="reason-card">
+        <div class="reason-num">02</div>
+        <div class="reason-tag">人格教育</div>
+        <h3 class="reason-title">学力向上 ＋ <span>人格教育の総合指導</span></h3>
+        <p class="reason-body">成績を上げるだけが塾ではありません。礼儀・道徳・社会常識も含めた「人として成長する」指導を実践。受験を通じて、将来に役立つ人間力を育みます。</p>
+      </div>
+      <div class="reason-card">
+        <div class="reason-num">03</div>
+        <div class="reason-tag">受験相談</div>
+        <h3 class="reason-title"><span>IT業界30年のキャリア</span>を持つ塾頭が進学相談</h3>
+        <p class="reason-body">IT業界出身の塾頭が、進路・受験に関するリアルな情報を提供。私立中高の情報を豊富に収集しており、「どの高校に進むべきか」という相談にも的確に答えます。</p>
+      </div>
+      <div class="reason-card">
+        <div class="reason-num">04</div>
+        <div class="reason-tag">夜間安全</div>
+        <h3 class="reason-title">夜間も安心の<span>明るい教室環境</span></h3>
+        <p class="reason-body">外灯・ライトアップを完備。ブース型自習スペースで集中できる環境を整備しています。遅い時間帯でも安心して通える塾です。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 他塾比較テーブル ===== -->
+<section class="section compare-section">
+  <div class="section-inner">
+    <div class="section-label" style="color:#94a3b8;">Comparison</div>
+    <h2 class="section-title" style="color:#fff;">他塾との<span style="color:var(--primary);border-bottom:3px solid var(--accent);padding-bottom:2px;">違いを確認</span></h2>
+    <p class="section-lead" style="color:#64748b;">「どこも同じでしょ？」と思っていませんか？3つのタイプを比べてみてください。</p>
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>比較項目</th>
+          <th>集団塾</th>
+          <th>大手個別塾</th>
+          <th>Dr.関塾 祐天寺校</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>指導形式</td>
+          <td>集団授業</td>
+          <td>個別（1〜3名）</td>
+          <td><span class="check">✓</span> 完全個別（2名：1名）</td>
+        </tr>
+        <tr>
+          <td>質問のしやすさ</td>
+          <td><span class="cross">✗</span> 質問しにくい</td>
+          <td><span class="triangle">△</span> タイミング次第</td>
+          <td><span class="check">✓</span> すぐ質問できる</td>
+        </tr>
+        <tr>
+          <td>講師変更</td>
+          <td><span class="cross">✗</span> 不可</td>
+          <td><span class="triangle">△</span> 手続き必要</td>
+          <td><span class="check">✓</span> 相談ですぐ変更可</td>
+        </tr>
+        <tr>
+          <td>人格・礼儀指導</td>
+          <td><span class="cross">✗</span> なし</td>
+          <td><span class="cross">✗</span> なし</td>
+          <td><span class="check">✓</span> 総合指導あり</td>
+        </tr>
+        <tr>
+          <td>進学相談の質</td>
+          <td><span class="triangle">△</span> 一般的</td>
+          <td><span class="triangle">△</span> 一般的</td>
+          <td><span class="check">✓</span> IT業界30年のキャリア</td>
+        </tr>
+        <tr>
+          <td>体験授業</td>
+          <td><span class="cross">✗</span> 有料/条件付き</td>
+          <td><span class="triangle">△</span> 1回のみ</td>
+          <td><span class="check">✓</span> 90分×2回 完全無料</td>
+        </tr>
+        <tr>
+          <td>夜間の安全対策</td>
+          <td><span class="cross">✗</span> 標準的</td>
+          <td><span class="triangle">△</span> 標準的</td>
+          <td><span class="check">✓</span> ライトアップ・完全対応</td>
+        </tr>
+        <tr>
+          <td>小学生〜高校生対応</td>
+          <td><span class="triangle">△</span> 限定的</td>
+          <td><span class="check">✓</span> 対応</td>
+          <td><span class="check">✓</span> 全学年・全科目対応</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="compare-note">※比較内容は一般的な塾の特徴をもとにしたイメージです</p>
+  </div>
+</section>
+
+<!-- ===== コース紹介 ===== -->
+<section class="section" style="background:#f8fafc;">
+  <div class="section-inner">
+    <div class="section-label">Courses</div>
+    <h2 class="section-title">小・中・高 <span class="hl">全学年対応</span>コース</h2>
+    <p class="section-lead">基礎学力の定着から難関校受験まで、お子さまの目標に合わせたコースをご用意しています。</p>
+    <div class="course-grid">
+      <div class="course-card">
+        <div class="course-head elem">
+          小学生コース
+          <span class="course-grade">小1〜小6</span>
+        </div>
+        <div class="course-body">
+          <span class="course-tag">算数</span>
+          <span class="course-tag">国語</span>
+          <span class="course-tag">英語</span>
+          <span class="course-tag">理科</span>
+          <span class="course-tag">社会</span>
+          <p class="course-feature">基礎学力の定着から先取り学習、中学受験対応まで幅広く対応。小学生のうちから学ぶ習慣を身につけることで、中学以降の成績が大きく変わります。</p>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-head mid">
+          中学生コース
+          <span class="course-grade">中1〜中3</span>
+        </div>
+        <div class="course-body">
+          <span class="course-tag">数学</span>
+          <span class="course-tag">英語</span>
+          <span class="course-tag">国語</span>
+          <span class="course-tag">理科</span>
+          <span class="course-tag">社会</span>
+          <span class="course-tag">情報</span>
+          <p class="course-feature">内申点対策・定期テスト対策・高校受験を3本柱に指導。志望校の傾向に合わせた対策で、第一志望合格を目指します。</p>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-head high">
+          高校生コース
+          <span class="course-grade">高1〜高3</span>
+        </div>
+        <div class="course-body">
+          <span class="course-tag">数学</span>
+          <span class="course-tag">英語</span>
+          <span class="course-tag">国語</span>
+          <span class="course-tag">理科</span>
+          <span class="course-tag">社会</span>
+          <p class="course-feature">大学受験・共通テスト対策はもちろん、総合型選抜・推薦入試にも対応。塾頭のキャリア経験を活かした、進路選択のアドバイスも充実。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 保護者の声 ===== -->
+<section class="section voice-section">
+  <div class="section-inner">
+    <div class="section-label">Voices</div>
+    <h2 class="section-title">保護者・生徒の<span class="hl">リアルな声</span></h2>
+    <p class="section-lead">入塾を迷っている方へ。先輩の保護者・生徒からのメッセージをご覧ください。</p>
+    <div class="voice-grid">
+      <div class="voice-card">
+        <div class="voice-score">数学 +20点 / 3ヶ月</div>
+        <p class="voice-text">入塾前は数学が苦手で定期テストもギリギリの点数でした。でも先生が一つひとつ丁寧に教えてくれたおかげで、3ヶ月で20点以上アップ。そして<strong>第一志望の高校に合格</strong>できました！</p>
+        <div class="voice-name">A.M さんの保護者（中3 / 高校受験合格）</div>
+      </div>
+      <div class="voice-card">
+        <div class="voice-score">内申点 じわじわ上昇中</div>
+        <p class="voice-text">以前は集団塾でしたが、質問できない子でずっと悩んでいました。Dr.関塾は先生との距離が近く、わからないことをすぐ聞ける。<strong>内申もじわじわ上がってきた</strong>と実感しています。</p>
+        <div class="voice-name">K.T さんの保護者（中1 / 内申点対策）</div>
+      </div>
+      <div class="voice-card">
+        <div class="voice-score">算数 苦手→好き になった</div>
+        <p class="voice-text">算数が全然できなかったけど、先生がわかるまで一緒に考えてくれるから<strong>楽しくなってきた</strong>。最近は自分から問題を解くのが好きになりました。</p>
+        <div class="voice-name">R.S さん本人（小6 / 中学準備）</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 春期講習の詳細 ===== -->
+<section class="section spring-section">
+  <div class="section-inner">
+    <div class="spring-grid">
+      <div>
+        <div class="section-label" style="color:var(--accent);">Spring Course 2025</div>
+        <h2 class="spring-title">春期特別<span>無料</span>講習会<br>今が、動くタイミング。</h2>
+        <ul class="spring-list">
+          <li>
+            <span class="s-icon">期間</span>
+            2025年3月25日(火)〜4月7日(月)
+          </li>
+          <li>
+            <span class="s-icon">対象</span>
+            小学生・中学生・高校生（全学年）
+          </li>
+          <li>
+            <span class="s-icon">時間</span>
+            90分 × 2回（日程は相談の上決定）
+          </li>
+          <li>
+            <span class="s-icon">費用</span>
+            完全無料（教材費含む）
+          </li>
+          <li>
+            <span class="s-icon">場所</span>
+            東急東横線 祐天寺駅 徒歩圏内<br>〒153-0065 東京都目黒区中町2-38-28 2F
+          </li>
+        </ul>
+        <div class="gift-box">
+          <strong>紹介特典：図書カード3,000円分プレゼント</strong><br>
+          お友達・ご兄弟を紹介いただいた方へ、紹介者・被紹介者の双方に図書カード3,000円分をお渡しします。
+        </div>
+      </div>
+      <div class="spring-box">
+        <p class="spring-box-title">SPRING TUITION</p>
+        <div class="spring-fee">¥0 <small>（通常期：教材費1,000円のみ）</small></div>
+        <p class="spring-fee-note">春期中（3/25〜4/7）は教材費も完全無料。<br>授業料・テキスト代・入会金 すべて0円。</p>
+        <dl class="spring-dl">
+          <div class="spring-dl-item">
+            <dt>授業回数</dt>
+            <dd>90分 × 2回</dd>
+          </div>
+          <div class="spring-dl-item">
+            <dt>指導形式</dt>
+            <dd>完全個別（生徒2名：講師1名）</dd>
+          </div>
+          <div class="spring-dl-item">
+            <dt>平日時間帯</dt>
+            <dd>15:20 / 16:50 / 18:20 / 19:50〜</dd>
+          </div>
+          <div class="spring-dl-item">
+            <dt>土曜時間帯</dt>
+            <dd>午前の部〜（春期のみ）</dd>
+          </div>
+          <div class="spring-dl-item">
+            <dt>受付</dt>
+            <dd>03-5734-1901<br>kanjuku.yutenji@gmail.com</dd>
+          </div>
+        </dl>
+        <a href="#form" class="btn-hero" style="width:100%;text-align:center;margin-top:24px;display:block;">無料体験を予約する</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section faq-section">
+  <div class="section-inner">
+    <div class="section-label">FAQ</div>
+    <h2 class="section-title">よくある<span class="hl">ご質問</span></h2>
+    <p class="section-lead">お申し込み前のご不安を解消します。</p>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="q-mark">Q</span>
+          体験授業は本当に無料ですか？
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-a">春期講習期間中（2025年3月25日〜4月7日）は、授業料・教材費ともに完全無料です。90分 × 2回をお試しいただけます。通常期は教材費1,000円のみいただいております。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="q-mark">Q</span>
+          授業についていけるか不安です
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-a">ご安心ください。体験授業の前に、お子さまの現在の学力・苦手単元・目標を丁寧にヒアリングします。完全個別指導のため、生徒一人ひとりのペースに合わせた授業内容でスタートします。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="q-mark">Q</span>
+          月謝はいくらですか？
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-a">コース・選択科目数・週の授業回数によって異なります。体験授業後の面談にて、お子さまに合ったプランを丁寧にご説明します。まずは無料体験からお気軽にお申し込みください。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="q-mark">Q</span>
+          担当講師の変更はできますか？
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-a">はい、可能です。講師との相性はとても大切だと考えています。「なんとなく合わないかも」という感覚でも遠慮なくご相談ください。最適な講師をご提案します。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="q-mark">Q</span>
+          授業の時間帯はいつですか？
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-a">通常期（平日）は15:20〜21:50の4時間帯から選べます。春期（3/25〜4/7）は月〜土で10:20〜21:50の7時間帯から選択可能です。1コマ90分制です。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="q-mark">Q</span>
+          最寄り駅・アクセスを教えてください
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-a">東急東横線「祐天寺駅」から徒歩圏内です。住所は東京都目黒区中町2-38-28 2Fです。夜間もライトアップしていますので、暗い時間帯でも安心してご来塾いただけます。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== アクセス ===== -->
+<section class="section access-section">
+  <div class="section-inner">
+    <div class="section-label">Access</div>
+    <h2 class="section-title">アクセス・<span class="hl">教室情報</span></h2>
+    <div class="access-grid">
+      <div class="access-map">地図プレースホルダー<br>東京都目黒区中町2-38-28 2F<br>（Googleマップを埋め込み予定）</div>
+      <div class="access-info">
+        <dl class="access-dl">
+          <dt>塾名</dt>
+          <dd>Dr.関塾 祐天寺校</dd>
+          <dt>住所</dt>
+          <dd>〒153-0065<br>東京都目黒区中町2-38-28 2F</dd>
+          <dt>最寄り駅</dt>
+          <dd>東急東横線「祐天寺駅」徒歩圏内</dd>
+          <dt>電話番号</dt>
+          <dd>03-5734-1901</dd>
+          <dt>FAX</dt>
+          <dd>03-5734-1903</dd>
+          <dt>Email</dt>
+          <dd>kanjuku.yutenji@gmail.com</dd>
+          <dt>受付時間</dt>
+          <dd>月〜金 15:00〜21:50<br>土 10:00〜21:50</dd>
+          <dt>開校</dt>
+          <dd>2016年〜（9年の指導実績）</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 申込フォーム ===== -->
+<section id="form" class="section form-section">
+  <div class="section-inner">
+    <div class="form-header">
+      <div class="section-label">Apply Now</div>
+      <h2 class="section-title" style="color:#fff;">無料体験授業を<span style="color:var(--primary);">今すぐ予約</span></h2>
+      <p style="color:#64748b;font-size:0.9rem;margin-top:8px;">4ステップで簡単お申し込み。気軽にご相談ください。</p>
+    </div>
+
+    <!-- ステップインジケーター -->
+    <div class="step-indicator">
+      <div class="si-item">
+        <div class="si-circle">1</div>
+        <div class="si-label">科目</div>
+      </div>
+      <div class="si-line"></div>
+      <div class="si-item">
+        <div class="si-circle">2</div>
+        <div class="si-label">学年</div>
+      </div>
+      <div class="si-line"></div>
+      <div class="si-item">
+        <div class="si-circle">3</div>
+        <div class="si-label">希望日時</div>
+      </div>
+      <div class="si-line"></div>
+      <div class="si-item">
+        <div class="si-circle">4</div>
+        <div class="si-label">お名前・連絡先</div>
+      </div>
+    </div>
+
+    <div class="step-panels">
+
+      <!-- STEP1 -->
+      <div data-p="1">
+        <h3 class="sp-title">体験したい科目を選んでください</h3>
+        <p class="sp-sub">複数選択できます。迷ったら「まずは相談」でもOK</p>
+        <div class="subj-grid">
+          <button type="button" class="subj-btn">
+            <span class="subj-icon">➗</span>数学・算数
+          </button>
+          <button type="button" class="subj-btn">
+            <span class="subj-icon">🔤</span>英語
+          </button>
+          <button type="button" class="subj-btn">
+            <span class="subj-icon">📖</span>国語
+          </button>
+          <button type="button" class="subj-btn">
+            <span class="subj-icon">🔬</span>理科
+          </button>
+          <button type="button" class="subj-btn">
+            <span class="subj-icon">🌏</span>社会
+          </button>
+          <button type="button" class="subj-btn">
+            <span class="subj-icon">💻</span>情報
+          </button>
+          <button type="button" class="subj-btn" style="grid-column:1/-1;">
+            <span class="subj-icon">💬</span>まずは何でも相談
+          </button>
+        </div>
+        <div class="step-nav">
+          <button type="button" class="btn-next" data-next="2" disabled>次へ：学年を選ぶ →</button>
+        </div>
+      </div>
+
+      <!-- STEP2 -->
+      <div data-p="2">
+        <h3 class="sp-title">学年を教えてください</h3>
+        <p class="sp-sub">お子さまの現在の学年をお選びください</p>
+        <div class="grade-group">
+          <p class="grade-group-label">小学生</p>
+          <div class="grade-row">
+            <button type="button" class="grade-btn">小1</button>
+            <button type="button" class="grade-btn">小2</button>
+            <button type="button" class="grade-btn">小3</button>
+            <button type="button" class="grade-btn">小4</button>
+            <button type="button" class="grade-btn">小5</button>
+            <button type="button" class="grade-btn">小6</button>
+          </div>
+        </div>
+        <div class="grade-group">
+          <p class="grade-group-label">中学生</p>
+          <div class="grade-row">
+            <button type="button" class="grade-btn">中1</button>
+            <button type="button" class="grade-btn">中2</button>
+            <button type="button" class="grade-btn">中3</button>
+          </div>
+        </div>
+        <div class="grade-group" style="margin-bottom:28px;">
+          <p class="grade-group-label">高校生</p>
+          <div class="grade-row">
+            <button type="button" class="grade-btn">高1</button>
+            <button type="button" class="grade-btn">高2</button>
+            <button type="button" class="grade-btn">高3</button>
+          </div>
+        </div>
+        <div class="step-nav">
+          <button type="button" class="btn-back" data-back="1">← 戻る</button>
+          <button type="button" class="btn-next" data-next="3" disabled>次へ：希望日時を選ぶ →</button>
+        </div>
+      </div>
+
+      <!-- STEP3 -->
+      <div data-p="3">
+        <h3 class="sp-title">ご希望の日時を教えてください</h3>
+        <p class="sp-sub">体験授業のご希望時間帯（複数選択可）</p>
+        <div class="time-grid">
+          <button type="button" class="time-btn" data-time="平日 15:20〜">平日<br><span>15:20〜16:50</span></button>
+          <button type="button" class="time-btn" data-time="平日 16:50〜">平日<br><span>16:50〜18:20</span></button>
+          <button type="button" class="time-btn" data-time="平日 18:20〜">平日<br><span>18:20〜19:50</span></button>
+          <button type="button" class="time-btn" data-time="平日 19:50〜">平日<br><span>19:50〜21:20</span></button>
+          <button type="button" class="time-btn" data-time="土曜 午前〜">土曜<br><span>午前の部</span></button>
+          <button type="button" class="time-btn" data-time="いつでも可">いつでも<br><span>ご相談可</span></button>
+        </div>
+        <div class="step-nav">
+          <button type="button" class="btn-back" data-back="2">← 戻る</button>
+          <button type="button" class="btn-next" data-next="4" disabled>次へ：お名前・連絡先 →</button>
+        </div>
+      </div>
+
+      <!-- STEP4 -->
+      <div data-p="4">
+        <h3 class="sp-title">お名前・連絡先を入力してください</h3>
+        <p class="sp-sub">入力後、担当スタッフよりご連絡いたします</p>
+        <form action="https://formspree.io/f/xdoqbrln" method="POST">
+          <div class="form-fields">
+            <div class="field-group">
+              <label class="field-label">お名前（保護者様）<span class="req">必須</span></label>
+              <input type="text" name="name" class="field-input" placeholder="例：田中 花子" required>
+            </div>
+            <div class="field-group">
+              <label class="field-label">お子さまのお名前<span class="req">必須</span></label>
+              <input type="text" name="student_name" class="field-input" placeholder="例：田中 太郎" required>
+            </div>
+            <div class="field-group">
+              <label class="field-label">電話番号<span class="req">必須</span></label>
+              <input type="tel" name="phone" class="field-input" placeholder="例：090-0000-0000" required>
+            </div>
+            <div class="field-group">
+              <label class="field-label">メールアドレス<span class="req">必須</span></label>
+              <input type="email" name="email" class="field-input" placeholder="例：example@email.com" required>
+            </div>
+            <div class="field-group">
+              <label class="field-label">ご質問・ご要望</label>
+              <textarea name="message" class="field-input" rows="3" placeholder="「苦手科目の克服を希望」「まずは塾の雰囲気を見たい」など、気軽に書いてください"></textarea>
+            </div>
+          </div>
+          <p class="form-agree">
+            <a href="#">プライバシーポリシー</a>に同意の上、送信してください。<br>
+            ※ 入力情報は体験授業のご案内にのみ使用します。
+          </p>
+          <div class="step-nav">
+            <button type="button" class="btn-back" data-back="3">← 戻る</button>
+            <button type="submit" class="btn-submit">無料体験を予約する ✓</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== フッター ===== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo"><span>Dr.</span>関塾 祐天寺校</div>
+        <p class="footer-desc">完全個別指導で「わからない」をゼロに。<br>2016年の開校以来、祐天寺で9年間の指導実績。<br>受験合格から学習習慣の定着まで、<br>総合的にサポートします。</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Contact</p>
+        <dl class="footer-info">
+          <dt>電話</dt>
+          <dd>03-5734-1901</dd>
+          <dt>FAX</dt>
+          <dd>03-5734-1903</dd>
+          <dt>Email</dt>
+          <dd>kanjuku.yutenji@gmail.com</dd>
+          <dt>受付時間</dt>
+          <dd>月〜金 15:00〜21:50<br>土 10:00〜21:50</dd>
+        </dl>
+      </div>
+      <div>
+        <p class="footer-col-title">Access</p>
+        <dl class="footer-info">
+          <dt>住所</dt>
+          <dd>〒153-0065<br>東京都目黒区中町2-38-28 2F</dd>
+          <dt>最寄り駅</dt>
+          <dd>東急東横線「祐天寺駅」<br>徒歩圏内</dd>
+          <dt>開校</dt>
+          <dd>2016年〜（9年）</dd>
+        </dl>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Dr.関塾 祐天寺校. All rights reserved.</span>
+      <div style="display:flex;gap:20px;">
+        <a href="#">プライバシーポリシー</a>
+        <a href="#">特定商取引法に基づく表記</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== スティッキーCTAバー ===== -->
+<div id="stickyBar">
+  <div class="sticky-inner">
+    <div class="sticky-text">
+      <small>春期特別無料講習会 3/25〜4/7</small><br>
+      今すぐ差をつける → 90分×2回 完全無料体験
+    </div>
+    <a href="#form" class="btn-sticky">無料体験を予約</a>
+  </div>
+</div>
+
+<script>
+(function(){
+  // FAQアコーディオン
+  document.querySelectorAll('.faq-q').forEach(function(q){
+    q.addEventListener('click',function(){
+      var item=this.closest('.faq-item');
+      var isOpen=item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(function(i){i.classList.remove('open');});
+      if(!isOpen)item.classList.add('open');
+    });
+  });
+
+  // 4ステップフォーム
+  function go(n,scroll){
+    document.querySelectorAll('[data-p]').forEach(function(p){p.classList.remove('sp-active');});
+    var t=document.querySelector('[data-p="'+n+'"]');
+    if(t)t.classList.add('sp-active');
+    document.querySelectorAll('.si-item').forEach(function(el,i){
+      el.classList.remove('active','done');
+      if(i+1===n)el.classList.add('active');
+      if(i+1<n)el.classList.add('done');
+    });
+    document.querySelectorAll('.si-line').forEach(function(l,i){
+      l.classList.toggle('done',i<n-1);
+    });
+    var form=document.getElementById('form');
+    if(scroll&&form)form.scrollIntoView({behavior:'smooth',block:'start'});
+  }
+  document.addEventListener('click',function(e){
+    var nb=e.target.closest('[data-next]');
+    if(nb&&!nb.disabled){go(+nb.dataset.next,true);}
+    var bb=e.target.closest('[data-back]');
+    if(bb){go(+bb.dataset.back,true);}
+    var sb=e.target.closest('.subj-btn');
+    if(sb){
+      sb.classList.toggle('sel');
+      var nx=document.querySelector('[data-p="1"] [data-next]');
+      if(nx)nx.disabled=!document.querySelector('.subj-btn.sel');
+    }
+    var gb=e.target.closest('.grade-btn');
+    if(gb){
+      document.querySelectorAll('.grade-btn').forEach(function(b){b.classList.remove('sel');});
+      gb.classList.add('sel');
+      var nx=document.querySelector('[data-p="2"] [data-next]');
+      if(nx)nx.disabled=false;
+    }
+    var tb=e.target.closest('.time-btn');
+    if(tb){
+      tb.classList.toggle('sel');
+      var nx=document.querySelector('[data-p="3"] [data-next]');
+      if(nx)nx.disabled=!document.querySelector('.time-btn.sel');
+    }
+  });
+  var sc=document.getElementById('stickyBar');
+  if(sc){
+    window.addEventListener('scroll',function(){
+      sc.classList.toggle('show',window.scrollY>500);
+    });
+  }
+  go(1);
+})();
+</script>
+</body>
+</html>
