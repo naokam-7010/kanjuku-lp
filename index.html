@@ -851,6 +851,492 @@
       .teachers__grid { grid-template-columns: repeat(2, 1fr); }
       .hero__catch { font-size: 1.3rem; }
     }
+
+    /* ===== 選ばれる4つの理由 ― 強調スタイル ===== */
+    #features {
+      background: linear-gradient(150deg, #0b3566 0%, #1a5fa8 55%, #1e6ec2 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    #features::before {
+      content: '';
+      position: absolute;
+      top: -120px; right: -120px;
+      width: 500px; height: 500px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    #features::after {
+      content: '';
+      position: absolute;
+      bottom: -100px; left: -80px;
+      width: 380px; height: 380px;
+      background: rgba(255,255,255,0.04);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    #features .section-title {
+      color: #fff;
+    }
+    #features .title-deco {
+      border-bottom-color: var(--accent);
+    }
+    #features .section-subtitle {
+      color: rgba(255,255,255,0.78);
+    }
+    #features .feature-card {
+      border-top: 4px solid var(--accent);
+      box-shadow: 0 6px 24px rgba(0,0,0,0.18);
+    }
+    #features .feature-card__num {
+      color: var(--accent);
+      font-size: 0.8rem;
+    }
+    #features .feature-card__title {
+      font-size: 1.15rem;
+    }
+    #features .cta-note {
+      color: rgba(255,255,255,0.72);
+    }
+
+    /* ===== 実績数字 ― 強調スタイル ===== */
+    #results {
+      background: linear-gradient(160deg, #091f3a 0%, #112e52 45%, #0f2a4c 100%);
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+    #results::before {
+      content: '';
+      position: absolute;
+      top: -40px; left: 50%;
+      transform: translateX(-50%);
+      width: 700px; height: 280px;
+      background: radial-gradient(ellipse, rgba(245,166,35,0.10) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    #results::after {
+      content: '';
+      position: absolute;
+      bottom: -60px; right: -60px;
+      width: 320px; height: 320px;
+      background: rgba(255,255,255,0.03);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    #results .stat-card {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 14px;
+      padding: 32px 20px;
+      backdrop-filter: blur(6px);
+      transition: transform 0.2s, background 0.2s;
+    }
+    #results .stat-card:hover {
+      background: rgba(255,255,255,0.14);
+      transform: translateY(-5px);
+    }
+    #results .stat-card__num {
+      font-size: 3.2rem;
+    }
+    #results .stat-card__label {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.82);
+      margin-top: 10px;
+    }
+
+    @media (max-width: 768px) {
+      #results .stat-card {
+        padding: 22px 12px;
+      }
+      #results .stat-card__num {
+        font-size: 2.4rem;
+      }
+    }
+
+    /* ===== ステップフォーム ===== */
+    .step-form {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* ステップインジケーター */
+    .step-indicator {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 28px;
+    }
+    .step-indicator__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+    .step-indicator__num {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: #ddd;
+      color: #aaa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1rem;
+      transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    }
+    .step-indicator__label {
+      font-size: 0.72rem;
+      color: #bbb;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    .step-indicator__item.is-active .step-indicator__num {
+      background: var(--primary);
+      color: #fff;
+      box-shadow: 0 3px 10px rgba(26,95,168,0.4);
+    }
+    .step-indicator__item.is-active .step-indicator__label {
+      color: var(--primary);
+      font-weight: 700;
+    }
+    .step-indicator__item.is-done .step-indicator__num {
+      background: var(--green);
+      color: #fff;
+    }
+    .step-indicator__item.is-done .step-indicator__label {
+      color: var(--green);
+    }
+    .step-indicator__line {
+      flex: 1;
+      height: 3px;
+      background: #ddd;
+      margin: 0 6px;
+      margin-bottom: 24px;
+      border-radius: 2px;
+      transition: background 0.3s;
+    }
+    .step-indicator__line.is-done {
+      background: var(--green);
+    }
+
+    /* フォームボックス */
+    .step-form__box {
+      background: #fff;
+      border-radius: 16px;
+      padding: 36px 40px;
+      box-shadow: 0 6px 28px rgba(0,0,0,0.10);
+    }
+
+    /* ステップパネル */
+    .step-panel { display: none; }
+    .step-panel.is-active {
+      display: block;
+      animation: fadeInPanel 0.28s ease;
+    }
+    @keyframes fadeInPanel {
+      from { opacity: 0; transform: translateX(14px); }
+      to   { opacity: 1; transform: translateX(0); }
+    }
+    .step-panel__title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 8px;
+      text-align: center;
+    }
+    .step-panel__sub {
+      font-size: 0.83rem;
+      color: var(--text-sub);
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .step-panel__next {
+      text-align: center;
+      margin-top: 28px;
+    }
+    .step-panel__nav {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-top: 28px;
+    }
+    .step-panel__nav .btn--outline {
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .step-panel__nav .step-next-btn {
+      flex: 1;
+      text-align: center;
+    }
+
+    /* 科目ボタン */
+    .subject-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+    .subject-btn {
+      background: #f8f9fa;
+      border: 2px solid #e4e4e4;
+      border-radius: 12px;
+      padding: 20px 10px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      transition: border-color 0.18s, background 0.18s, box-shadow 0.18s, transform 0.15s;
+      font-family: inherit;
+    }
+    .subject-btn:hover {
+      border-color: var(--primary);
+      background: var(--bg-light);
+      transform: translateY(-2px);
+    }
+    .subject-btn.is-selected {
+      border-color: var(--primary);
+      background: var(--bg-light);
+      box-shadow: 0 0 0 3px rgba(26,95,168,0.18);
+    }
+    .subject-btn__icon { font-size: 1.9rem; }
+    .subject-btn__label {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text-main);
+      line-height: 1.3;
+      text-align: center;
+    }
+    .subject-btn--consult {
+      grid-column: 1 / -1;
+      flex-direction: row;
+      padding: 14px 24px;
+      justify-content: center;
+      gap: 12px;
+      background: #fff9ee;
+      border-color: var(--accent);
+    }
+    .subject-btn--consult:hover,
+    .subject-btn--consult.is-selected {
+      background: #fff3d4;
+      border-color: var(--accent-dark);
+      box-shadow: 0 0 0 3px rgba(245,166,35,0.2);
+    }
+    .subject-btn--consult .subject-btn__label { font-size: 0.95rem; }
+
+    /* 学年ボタン */
+    .grade-groups {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-bottom: 4px;
+    }
+    .grade-group__label {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--primary);
+      background: var(--bg-light);
+      padding: 4px 14px;
+      border-radius: 20px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    .grade-btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .grade-btn {
+      padding: 10px 20px;
+      border: 2px solid #e4e4e4;
+      border-radius: 8px;
+      background: #f8f9fa;
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-weight: 600;
+      font-family: inherit;
+      color: var(--text-main);
+      transition: border-color 0.15s, background 0.15s, color 0.15s;
+    }
+    .grade-btn:hover { border-color: var(--primary); background: var(--bg-light); }
+    .grade-btn.is-selected {
+      border-color: var(--primary);
+      background: var(--primary);
+      color: #fff;
+    }
+
+    /* カレンダー */
+    .calendar-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      align-items: start;
+      margin-bottom: 4px;
+    }
+    .calendar {
+      background: #f8f9fa;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid #e0e0e0;
+    }
+    .calendar__header {
+      background: var(--primary);
+      color: #fff;
+      padding: 12px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .calendar__month { font-weight: 700; font-size: 0.95rem; }
+    .calendar__nav {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 1.5rem;
+      cursor: pointer;
+      padding: 0 8px;
+      border-radius: 4px;
+      line-height: 1;
+      transition: background 0.15s;
+      font-family: inherit;
+    }
+    .calendar__nav:hover { background: rgba(255,255,255,0.2); }
+    .calendar__weekdays {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      background: #e6edf5;
+      padding: 5px 4px;
+    }
+    .calendar__weekdays span {
+      text-align: center;
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--text-sub);
+    }
+    .calendar__weekdays span:first-child { color: #e74c3c; }
+    .calendar__weekdays span:last-child  { color: var(--primary); }
+    .calendar__days {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      padding: 6px 4px;
+      gap: 3px;
+    }
+    .cal-day {
+      aspect-ratio: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+      font-size: 0.78rem;
+      cursor: default;
+    }
+    .cal-day__num { line-height: 1.1; font-size: 0.82rem; }
+    .cal-day__status { font-size: 0.58rem; font-weight: 700; line-height: 1; }
+    .cal-day--past  { color: #ccc; }
+    .cal-day--sunday  .cal-day__num { color: #e74c3c; }
+    .cal-day--saturday .cal-day__num { color: var(--primary); }
+    .cal-day--available {
+      cursor: pointer;
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      font-weight: 600;
+      transition: border-color 0.14s, background 0.14s;
+    }
+    .cal-day--available:hover { border-color: var(--primary); background: var(--bg-light); }
+    .cal-day--available .cal-day__status { color: var(--green); }
+    .cal-day--few .cal-day__status { color: var(--accent) !important; }
+    .cal-day--selected {
+      background: var(--primary) !important;
+      border-color: var(--primary) !important;
+    }
+    .cal-day--selected .cal-day__num { color: #fff !important; }
+    .cal-day--selected .cal-day__status { color: rgba(255,255,255,0.85) !important; }
+
+    /* タイムスロット */
+    .timeslot-wrap {
+      background: #f8f9fa;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      padding: 16px;
+      min-height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .timeslot__placeholder {
+      text-align: center;
+      color: #bbb;
+      font-size: 0.85rem;
+      line-height: 1.7;
+    }
+    .timeslot__placeholder-icon { font-size: 1.8rem; margin-bottom: 8px; }
+    .timeslot__date {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 10px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .timeslot__list { display: flex; flex-direction: column; gap: 7px; }
+    .timeslot-btn {
+      padding: 9px 12px;
+      border-radius: 8px;
+      border: 2px solid #e4e4e4;
+      background: #fff;
+      cursor: pointer;
+      font-size: 0.85rem;
+      font-family: inherit;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: border-color 0.15s, background 0.15s, color 0.15s;
+    }
+    .timeslot-btn:hover { border-color: var(--primary); background: var(--bg-light); }
+    .timeslot-btn.is-selected { border-color: var(--primary); background: var(--primary); color: #fff; }
+    .timeslot-btn__status { font-size: 0.73rem; font-weight: 700; color: var(--green); }
+    .timeslot-btn--few .timeslot-btn__status { color: var(--accent); }
+    .timeslot-btn.is-selected .timeslot-btn__status { color: rgba(255,255,255,0.85); }
+
+    /* 確認サマリー */
+    .confirm-summary {
+      background: var(--bg-light);
+      border: 1px solid #c5d8ef;
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin-bottom: 22px;
+      font-size: 0.88rem;
+    }
+    .confirm-summary__item {
+      display: flex;
+      gap: 10px;
+      align-items: baseline;
+      padding: 5px 0;
+      border-bottom: 1px dashed #cfe0f0;
+    }
+    .confirm-summary__item:last-child { border-bottom: none; }
+    .confirm-summary__key {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 50px;
+      flex-shrink: 0;
+    }
+    .confirm-summary__val { color: var(--text-main); font-weight: 500; }
+
+    /* レスポンシブ */
+    @media (max-width: 768px) {
+      .step-form__box { padding: 24px 18px; }
+      .subject-grid { grid-template-columns: repeat(2, 1fr); }
+      .subject-btn--consult { grid-column: 1 / -1; }
+      .calendar-wrap { grid-template-columns: 1fr; }
+      .step-panel__nav { flex-direction: column; }
+      .step-panel__nav .btn { width: 100%; text-align: center; }
+      .step-panel__nav .btn--outline { order: 2; }
+      .step-panel__nav .step-next-btn { order: 1; }
+    }
   </style>
 </head>
 <body>
@@ -942,7 +1428,7 @@
   </section>
 
   <!-- 特徴 -->
-  <section class="section section--blue" id="features">
+  <section class="section" id="features">
     <div class="container">
       <h2 class="section-title"><span class="title-deco">Dr.関塾が選ばれる4つの理由</span></h2>
       <p class="section-subtitle">開校9年、地域に根ざした個別指導の強み</p>
@@ -1043,7 +1529,7 @@
   </section>
 
   <!-- 実績数字 -->
-  <section class="section section--dark" id="results">
+  <section class="section" id="results">
     <div class="container">
       <h2 class="section-title section-title--white"><span class="title-deco">Dr.関塾 祐天寺校の実績</span></h2>
       <p class="section-subtitle section-subtitle--white">開校から9年、地域の生徒さんとともに積み上げてきた実績</p>
@@ -1323,69 +1809,186 @@
     </div>
   </section>
 
-  <!-- 申込フォーム -->
+  <!-- 申込フォーム（ステップ式） -->
   <section class="section form-section" id="form">
     <div class="container">
       <h2 class="section-title"><span class="title-deco">無料体験授業のお申込み</span></h2>
-      <p class="section-subtitle">フォームにご入力いただくと、2営業日以内にご連絡いたします</p>
-      <div class="form-box">
-        <h3 class="form-box__title">🌸 春期特別無料講習会 申込フォーム</h3>
-        <form action="#" method="post">
-          <div class="form-group">
-            <label>お子さまのお名前（フリガナ）<span class="required">必須</span></label>
-            <input type="text" name="student_name" placeholder="例：関塾 太郎（カンジュク タロウ）" required>
+      <p class="section-subtitle">カンタン4ステップで完了！まずは受けたい授業を選んでください</p>
+
+      <div class="step-form">
+
+        <!-- ステップインジケーター -->
+        <div class="step-indicator">
+          <div class="step-indicator__item is-active" data-step="1">
+            <div class="step-indicator__num">1</div>
+            <div class="step-indicator__label">科目</div>
           </div>
-          <div class="form-group">
-            <label>学年<span class="required">必須</span></label>
-            <select name="grade" required>
-              <option value="">選択してください</option>
-              <option>小学1年生</option>
-              <option>小学2年生</option>
-              <option>小学3年生</option>
-              <option>小学4年生</option>
-              <option>小学5年生</option>
-              <option>小学6年生</option>
-              <option>中学1年生</option>
-              <option>中学2年生</option>
-              <option>中学3年生</option>
-              <option>高校1年生</option>
-              <option>高校2年生</option>
-              <option>高校3年生</option>
-            </select>
+          <div class="step-indicator__line"></div>
+          <div class="step-indicator__item" data-step="2">
+            <div class="step-indicator__num">2</div>
+            <div class="step-indicator__label">学年</div>
           </div>
-          <div class="form-group">
-            <label>体験希望科目<span class="required">必須</span></label>
-            <select name="subject" required>
-              <option value="">選択してください</option>
-              <option>数学・算数</option>
-              <option>英語</option>
-              <option>国語</option>
-              <option>理科</option>
-              <option>社会</option>
-              <option>情報</option>
-              <option>相談して決めたい</option>
-            </select>
+          <div class="step-indicator__line"></div>
+          <div class="step-indicator__item" data-step="3">
+            <div class="step-indicator__num">3</div>
+            <div class="step-indicator__label">日時</div>
           </div>
-          <div class="form-group">
-            <label>保護者のお名前<span class="required">必須</span></label>
-            <input type="text" name="parent_name" placeholder="例：関塾 花子" required>
+          <div class="step-indicator__line"></div>
+          <div class="step-indicator__item" data-step="4">
+            <div class="step-indicator__num">4</div>
+            <div class="step-indicator__label">お名前</div>
           </div>
-          <div class="form-group">
-            <label>電話番号<span class="required">必須</span></label>
-            <input type="tel" name="phone" placeholder="例：090-1234-5678" required>
+        </div>
+
+        <div class="step-form__box">
+
+          <!-- ========== STEP 1: 科目選択 ========== -->
+          <div class="step-panel is-active" data-panel="1">
+            <h3 class="step-panel__title">どの科目を強化したいですか？</h3>
+            <p class="step-panel__sub">気になる科目を選んでください（複数でもOK！）</p>
+            <div class="subject-grid">
+              <button type="button" class="subject-btn" data-subject="数学・算数">
+                <span class="subject-btn__icon">📐</span>
+                <span class="subject-btn__label">数学・算数</span>
+              </button>
+              <button type="button" class="subject-btn" data-subject="英語">
+                <span class="subject-btn__icon">🌎</span>
+                <span class="subject-btn__label">英語</span>
+              </button>
+              <button type="button" class="subject-btn" data-subject="国語">
+                <span class="subject-btn__icon">📖</span>
+                <span class="subject-btn__label">国語</span>
+              </button>
+              <button type="button" class="subject-btn" data-subject="理科">
+                <span class="subject-btn__icon">🔬</span>
+                <span class="subject-btn__label">理科</span>
+              </button>
+              <button type="button" class="subject-btn" data-subject="社会">
+                <span class="subject-btn__icon">🗾</span>
+                <span class="subject-btn__label">社会</span>
+              </button>
+              <button type="button" class="subject-btn" data-subject="情報">
+                <span class="subject-btn__icon">💻</span>
+                <span class="subject-btn__label">情報</span>
+              </button>
+              <button type="button" class="subject-btn subject-btn--consult" data-subject="まずは相談したい">
+                <span class="subject-btn__icon">💬</span>
+                <span class="subject-btn__label">まずは何でも相談したい</span>
+              </button>
+            </div>
+            <div class="step-panel__next">
+              <button type="button" class="btn btn--primary btn--lg step-next-btn" data-next="2" disabled>
+                次へ：学年を選ぶ →
+              </button>
+            </div>
           </div>
-          <div class="form-group">
-            <label>メールアドレス</label>
-            <input type="email" name="email" placeholder="例：example@email.com">
+
+          <!-- ========== STEP 2: 学年選択 ========== -->
+          <div class="step-panel" data-panel="2">
+            <h3 class="step-panel__title">お子さまの学年を教えてください</h3>
+            <div class="grade-groups">
+              <div class="grade-group">
+                <div class="grade-group__label">🏫 小学生</div>
+                <div class="grade-btns">
+                  <button type="button" class="grade-btn" data-grade="小学1年生">1年生</button>
+                  <button type="button" class="grade-btn" data-grade="小学2年生">2年生</button>
+                  <button type="button" class="grade-btn" data-grade="小学3年生">3年生</button>
+                  <button type="button" class="grade-btn" data-grade="小学4年生">4年生</button>
+                  <button type="button" class="grade-btn" data-grade="小学5年生">5年生</button>
+                  <button type="button" class="grade-btn" data-grade="小学6年生">6年生</button>
+                </div>
+              </div>
+              <div class="grade-group">
+                <div class="grade-group__label">🏫 中学生</div>
+                <div class="grade-btns">
+                  <button type="button" class="grade-btn" data-grade="中学1年生">1年生</button>
+                  <button type="button" class="grade-btn" data-grade="中学2年生">2年生</button>
+                  <button type="button" class="grade-btn" data-grade="中学3年生">3年生</button>
+                </div>
+              </div>
+              <div class="grade-group">
+                <div class="grade-group__label">🏫 高校生</div>
+                <div class="grade-btns">
+                  <button type="button" class="grade-btn" data-grade="高校1年生">1年生</button>
+                  <button type="button" class="grade-btn" data-grade="高校2年生">2年生</button>
+                  <button type="button" class="grade-btn" data-grade="高校3年生">3年生</button>
+                </div>
+              </div>
+            </div>
+            <div class="step-panel__nav">
+              <button type="button" class="btn btn--outline step-back-btn" data-back="1">← 戻る</button>
+              <button type="button" class="btn btn--primary btn--lg step-next-btn" data-next="3" disabled>次へ：日時を選ぶ →</button>
+            </div>
           </div>
-          <div class="form-group">
-            <label>ご希望日時・ご質問など</label>
-            <textarea name="message" placeholder="ご希望の曜日・時間帯、お子さまの状況、ご質問などがあればご記入ください"></textarea>
+
+          <!-- ========== STEP 3: 日時選択 ========== -->
+          <div class="step-panel" data-panel="3">
+            <h3 class="step-panel__title">体験授業の日時を選んでください</h3>
+            <p class="step-panel__sub">○：空きあり　△：残りわずか　―：受付終了</p>
+            <div class="calendar-wrap">
+              <div class="calendar">
+                <div class="calendar__header">
+                  <button type="button" class="calendar__nav" id="calPrev">&#8249;</button>
+                  <span class="calendar__month" id="calMonthLabel"></span>
+                  <button type="button" class="calendar__nav" id="calNext">&#8250;</button>
+                </div>
+                <div class="calendar__weekdays">
+                  <span>日</span><span>月</span><span>火</span><span>水</span><span>木</span><span>金</span><span>土</span>
+                </div>
+                <div class="calendar__days" id="calDays"></div>
+              </div>
+              <div class="timeslot-wrap" id="timeslotWrap">
+                <div class="timeslot__placeholder" id="timeslotPlaceholder">
+                  <div class="timeslot__placeholder-icon">👆</div>
+                  <p>左のカレンダーから<br>日付を選んでください</p>
+                </div>
+                <div id="timeslotContent" style="display:none;">
+                  <div class="timeslot__date" id="timeslotDate"></div>
+                  <div class="timeslot__list" id="timeslotList"></div>
+                </div>
+              </div>
+            </div>
+            <div class="step-panel__nav">
+              <button type="button" class="btn btn--outline step-back-btn" data-back="2">← 戻る</button>
+              <button type="button" class="btn btn--primary btn--lg step-next-btn" data-next="4" disabled>次へ：お名前を入力 →</button>
+            </div>
           </div>
-          <button type="submit" class="form__submit">無料体験授業を申し込む →</button>
-          <p class="form__note">※ 入力内容は個人情報保護方針に従って取り扱います。<br>電話でのお申込みは <a href="tel:0357341901" style="color:var(--primary);">03-5734-1901</a> まで。</p>
-        </form>
-      </div>
+
+          <!-- ========== STEP 4: 個人情報 ========== -->
+          <div class="step-panel" data-panel="4">
+            <h3 class="step-panel__title">最後にお名前と連絡先を教えてください</h3>
+            <div class="confirm-summary" id="confirmSummary"></div>
+            <form action="#" method="post">
+              <div class="form-group">
+                <label>お子さまのお名前（フリガナ）<span class="required">必須</span></label>
+                <input type="text" name="student_name" placeholder="例：カンジュク タロウ" required>
+              </div>
+              <div class="form-group">
+                <label>保護者のお名前<span class="required">必須</span></label>
+                <input type="text" name="parent_name" placeholder="例：関塾 花子" required>
+              </div>
+              <div class="form-group">
+                <label>電話番号<span class="required">必須</span></label>
+                <input type="tel" name="phone" placeholder="例：090-1234-5678" required>
+              </div>
+              <div class="form-group">
+                <label>メールアドレス<span style="font-size:0.75rem; color:var(--text-sub); margin-left:6px;">任意</span></label>
+                <input type="email" name="email" placeholder="例：example@email.com">
+              </div>
+              <div class="form-group">
+                <label>ご質問・ご要望など</label>
+                <textarea name="message" placeholder="気になること、お子さまの状況など、お気軽にどうぞ"></textarea>
+              </div>
+              <div class="step-panel__nav">
+                <button type="button" class="btn btn--outline step-back-btn" data-back="3">← 戻る</button>
+                <button type="submit" class="btn btn--primary btn--lg" style="flex:1; text-align:center;">🌸 申し込みを確定する →</button>
+              </div>
+              <p class="form__note" style="margin-top:14px;">※ 入力内容は個人情報保護方針に従って取り扱います。<br>電話でのお申込みは <a href="tel:0357341901" style="color:var(--primary);">03-5734-1901</a> まで。</p>
+            </form>
+          </div>
+
+        </div><!-- /.step-form__box -->
+      </div><!-- /.step-form -->
     </div>
   </section>
 
@@ -1437,6 +2040,265 @@
       </a>
     </div>
   </div>
+
+  <!-- JS: ステップフォーム -->
+  <script>
+  (function () {
+    var selectedSubjects = [];
+    var selectedGrade    = '';
+    var selectedDate     = null;
+    var selectedTime     = '';
+
+    /* ---------- ステップ移動 ---------- */
+    function goToStep(n) {
+      document.querySelectorAll('.step-panel').forEach(function (p) {
+        p.classList.remove('is-active');
+      });
+      var panel = document.querySelector('[data-panel="' + n + '"]');
+      if (panel) panel.classList.add('is-active');
+
+      document.querySelectorAll('.step-indicator__item').forEach(function (item) {
+        var s = parseInt(item.dataset.step, 10);
+        item.classList.remove('is-active', 'is-done');
+        if (s === n) item.classList.add('is-active');
+        if (s < n)  item.classList.add('is-done');
+      });
+      document.querySelectorAll('.step-indicator__line').forEach(function (line, i) {
+        line.classList.toggle('is-done', i < n - 1);
+      });
+
+      if (n === 3) renderCalendar();
+      if (n === 4) renderSummary();
+    }
+
+    /* ---------- Step 1: 科目ボタン ---------- */
+    document.querySelectorAll('.subject-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var subject = this.dataset.subject;
+        this.classList.toggle('is-selected');
+        if (this.classList.contains('is-selected')) {
+          if (selectedSubjects.indexOf(subject) === -1) selectedSubjects.push(subject);
+        } else {
+          selectedSubjects = selectedSubjects.filter(function (s) { return s !== subject; });
+        }
+        var nextBtn = document.querySelector('[data-panel="1"] .step-next-btn');
+        if (nextBtn) nextBtn.disabled = (selectedSubjects.length === 0);
+      });
+    });
+
+    /* ---------- Step 2: 学年ボタン ---------- */
+    document.querySelectorAll('.grade-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        document.querySelectorAll('.grade-btn').forEach(function (b) { b.classList.remove('is-selected'); });
+        this.classList.add('is-selected');
+        selectedGrade = this.dataset.grade;
+        var nextBtn = document.querySelector('[data-panel="2"] .step-next-btn');
+        if (nextBtn) nextBtn.disabled = false;
+      });
+    });
+
+    /* ---------- 次へ/戻るボタン ---------- */
+    document.querySelectorAll('.step-next-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        if (!this.disabled) goToStep(parseInt(this.dataset.next, 10));
+      });
+    });
+    document.querySelectorAll('.step-back-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        goToStep(parseInt(this.dataset.back, 10));
+      });
+    });
+
+    /* ---------- カレンダー ---------- */
+    var today = new Date();
+    today.setHours(0, 0, 0, 0);
+    var calYear  = today.getFullYear();
+    var calMonth = today.getMonth();
+
+    /* 翌々日以降を受付可能に */
+    var minDate = new Date(today);
+    minDate.setDate(minDate.getDate() + 2);
+
+    /* 残りわずかにするオフセット日（+7日、+9日） */
+    function makeFewDate(offset) {
+      var d = new Date(today);
+      d.setDate(d.getDate() + offset);
+      return d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate();
+    }
+    var fewSet = {};
+    fewSet[makeFewDate(7)]  = true;
+    fewSet[makeFewDate(9)]  = true;
+    fewSet[makeFewDate(14)] = true;
+
+    function isAvailable(d) {
+      if (d < minDate) return false;
+      var dow = d.getDay();
+      return dow !== 0; /* 日曜のみ休み */
+    }
+    function isFew(d) {
+      var key = d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate();
+      return !!fewSet[key];
+    }
+
+    function renderCalendar() {
+      var labelEl = document.getElementById('calMonthLabel');
+      var daysEl  = document.getElementById('calDays');
+      if (!labelEl || !daysEl) return;
+
+      labelEl.textContent = calYear + '年' + (calMonth + 1) + '月';
+      daysEl.innerHTML = '';
+
+      var firstDow     = new Date(calYear, calMonth, 1).getDay();
+      var daysInMonth  = new Date(calYear, calMonth + 1, 0).getDate();
+
+      for (var i = 0; i < firstDow; i++) {
+        var empty = document.createElement('div');
+        empty.className = 'cal-day';
+        daysEl.appendChild(empty);
+      }
+
+      for (var d = 1; d <= daysInMonth; d++) {
+        var date   = new Date(calYear, calMonth, d);
+        var dow    = date.getDay();
+        var dayEl  = document.createElement('div');
+        var numEl  = document.createElement('div');
+        numEl.className  = 'cal-day__num';
+        numEl.textContent = d;
+        dayEl.appendChild(numEl);
+
+        var classes = ['cal-day'];
+        if (dow === 0) classes.push('cal-day--sunday');
+        if (dow === 6) classes.push('cal-day--saturday');
+
+        if (isAvailable(date)) {
+          var few = isFew(date);
+          classes.push('cal-day--available');
+          if (few) classes.push('cal-day--few');
+          if (selectedDate &&
+              selectedDate.getFullYear() === calYear &&
+              selectedDate.getMonth()    === calMonth &&
+              selectedDate.getDate()     === d) {
+            classes.push('cal-day--selected');
+          }
+          var statusEl = document.createElement('div');
+          statusEl.className   = 'cal-day__status';
+          statusEl.textContent = few ? '△' : '○';
+          dayEl.appendChild(statusEl);
+
+          (function (dateObj) {
+            dayEl.addEventListener('click', function () {
+              selectedDate = dateObj;
+              selectedTime = '';
+              var nextBtn = document.querySelector('[data-panel="3"] .step-next-btn');
+              if (nextBtn) nextBtn.disabled = true;
+              renderCalendar();
+              showTimeSlots(dateObj);
+            });
+          })(date);
+        } else {
+          classes.push('cal-day--past');
+          var dashEl = document.createElement('div');
+          dashEl.className   = 'cal-day__status';
+          dashEl.textContent = d >= minDate.getDate() ? '' : '―';
+          dayEl.appendChild(dashEl);
+        }
+
+        dayEl.className = classes.join(' ');
+        daysEl.appendChild(dayEl);
+      }
+    }
+
+    function showTimeSlots(date) {
+      var placeholder  = document.getElementById('timeslotPlaceholder');
+      var content      = document.getElementById('timeslotContent');
+      var dateEl       = document.getElementById('timeslotDate');
+      var listEl       = document.getElementById('timeslotList');
+      if (!placeholder || !content || !dateEl || !listEl) return;
+
+      placeholder.style.display = 'none';
+      content.style.display     = 'block';
+
+      var dayNames = ['日', '月', '火', '水', '木', '金', '土'];
+      dateEl.textContent = (date.getMonth() + 1) + '月' + date.getDate() + '日（' + dayNames[date.getDay()] + '）の空き状況';
+
+      var isSat  = date.getDay() === 6;
+      var allSlots = isSat
+        ? ['10:20〜11:50', '12:00〜13:30', '13:40〜15:10', '15:20〜16:50', '17:00〜18:30', '18:40〜20:10', '20:20〜21:50']
+        : ['15:20〜16:50', '17:00〜18:30', '18:40〜20:10', '20:20〜21:50'];
+
+      /* 固定で2枠を「残りわずか」に */
+      var fewSlots = [allSlots[1], allSlots[allSlots.length - 1]];
+
+      listEl.innerHTML = '';
+      allSlots.forEach(function (slot) {
+        var btn       = document.createElement('button');
+        btn.type      = 'button';
+        var isFewSlot = fewSlots.indexOf(slot) !== -1;
+        btn.className = 'timeslot-btn' + (isFewSlot ? ' timeslot-btn--few' : '');
+
+        var timeSpan   = document.createElement('span');
+        timeSpan.textContent = slot;
+
+        var statusSpan = document.createElement('span');
+        statusSpan.className   = 'timeslot-btn__status';
+        statusSpan.textContent = isFewSlot ? '△ 残りわずか' : '○ 空きあり';
+
+        btn.appendChild(timeSpan);
+        btn.appendChild(statusSpan);
+
+        if (slot === selectedTime) btn.classList.add('is-selected');
+
+        btn.addEventListener('click', function () {
+          document.querySelectorAll('.timeslot-btn').forEach(function (b) { b.classList.remove('is-selected'); });
+          this.classList.add('is-selected');
+          selectedTime = slot;
+          var nextBtn = document.querySelector('[data-panel="3"] .step-next-btn');
+          if (nextBtn) nextBtn.disabled = false;
+        });
+
+        listEl.appendChild(btn);
+      });
+    }
+
+    /* カレンダーナビ */
+    var calPrev = document.getElementById('calPrev');
+    var calNext = document.getElementById('calNext');
+    if (calPrev) calPrev.addEventListener('click', function () {
+      calMonth--;
+      if (calMonth < 0) { calMonth = 11; calYear--; }
+      renderCalendar();
+    });
+    if (calNext) calNext.addEventListener('click', function () {
+      calMonth++;
+      if (calMonth > 11) { calMonth = 0; calYear++; }
+      renderCalendar();
+    });
+
+    /* ---------- Step 4: サマリー ---------- */
+    function renderSummary() {
+      var el = document.getElementById('confirmSummary');
+      if (!el) return;
+      var dayNames = ['日', '月', '火', '水', '木', '金', '土'];
+      var dateStr = selectedDate
+        ? (selectedDate.getMonth() + 1) + '月' + selectedDate.getDate() + '日（' + dayNames[selectedDate.getDay()] + '） ' + selectedTime
+        : '未選択';
+      var rows = [
+        ['科目', selectedSubjects.length ? selectedSubjects.join('・') : '未選択'],
+        ['学年', selectedGrade || '未選択'],
+        ['日時', dateStr],
+      ];
+      el.innerHTML = rows.map(function (r) {
+        return '<div class="confirm-summary__item">'
+          + '<span class="confirm-summary__key">' + r[0] + '</span>'
+          + '<span class="confirm-summary__val">'  + r[1] + '</span>'
+          + '</div>';
+      }).join('');
+    }
+
+    /* 初期化 */
+    goToStep(1);
+  })();
+  </script>
 
   <!-- JS: スティッキーCTA制御・スムーズスクロール -->
   <script>
