@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr.関塾 祐天寺校｜祐天寺・目黒の完全個別指導・学習塾【春期無料体験受付中】</title>
+  <meta name="description" content="Dr.関塾 祐天寺校は東京都目黒区の完全個別指導塾。小学生〜高校生対象。開校9年の実績。春期特別無料講習会受付中（3/25〜4/7）。まずは無料体験授業（90分×2回）をお試しください。">
+
+  <style>
+    /* ===== リセット・ベース ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+      color: #333;
+      line-height: 1.7;
+      padding-bottom: 80px; /* スティッキーCTAバー分の余白 */
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { text-decoration: none; color: inherit; }
+
+    /* ===== カラー変数 ===== */
+    :root {
+      --primary: #1a5fa8;       /* メインブルー */
+      --primary-dark: #134a85;
+      --accent: #f5a623;        /* アクセントオレンジ */
+      --accent-dark: #d4891a;
+      --green: #27ae60;
+      --green-dark: #1e8449;
+      --bg-light: #f4f8fd;
+      --bg-gray: #f7f7f7;
+      --text-main: #222;
+      --text-sub: #666;
+      --border: #e0e0e0;
+    }
+
+    /* ===== ユーティリティ ===== */
+    .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+    .section { padding: 60px 0; }
+    .section--gray { background: var(--bg-gray); }
+    .section--blue { background: var(--bg-light); }
+    .section--dark { background: #1a3a5c; color: #fff; }
+
+    .section-title {
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+    .section-title--white { color: #fff; }
+    .section-subtitle {
+      text-align: center;
+      color: var(--text-sub);
+      font-size: 0.95rem;
+      margin-bottom: 40px;
+    }
+    .section-subtitle--white { color: rgba(255,255,255,0.8); }
+    .title-deco {
+      display: inline-block;
+      padding-bottom: 8px;
+      border-bottom: 3px solid var(--accent);
+    }
+
+    /* ===== 画像プレースホルダー ===== */
+    .img-placeholder {
+      background: #dce8f5;
+      border: 2px dashed #90b8d8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #6a9fc0;
+      font-size: 0.85rem;
+      font-weight: 500;
+      text-align: center;
+      border-radius: 6px;
+    }
+
+    /* ===== ボタン ===== */
+    .btn {
+      display: inline-block;
+      padding: 14px 32px;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+      text-align: center;
+    }
+    .btn--primary {
+      background: var(--accent);
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(245,166,35,0.4);
+    }
+    .btn--primary:hover { background: var(--accent-dark); transform: translateY(-2px); box-shadow: 0 6px 16px rgba(245,166,35,0.5); }
+    .btn--green {
+      background: var(--green);
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(39,174,96,0.4);
+    }
+    .btn--green:hover { background: var(--green-dark); transform: translateY(-2px); }
+    .btn--outline {
+      background: transparent;
+      color: var(--primary);
+      border: 2px solid var(--primary);
+    }
+    .btn--outline:hover { background: var(--primary); color: #fff; }
+    .btn--lg { padding: 18px 40px; font-size: 1.15rem; }
+    .btn--full { display: block; width: 100%; }
+    .cta-block {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .cta-note {
+      font-size: 0.82rem;
+      color: var(--text-sub);
+      margin-top: 8px;
+    }
+
+    /* ===== ヘッダー ===== */
+    .header {
+      background: #fff;
+      border-bottom: 3px solid var(--primary);
+      padding: 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .header__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .header__logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .header__logo-img {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+    }
+    .header__logo-text {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--primary);
+      line-height: 1.3;
+    }
+    .header__logo-text small {
+      display: block;
+      font-size: 0.7rem;
+      color: var(--text-sub);
+      font-weight: 400;
+    }
+    .header__tel {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .header__tel a { color: var(--primary); }
+    .header__tel small { display: block; font-size: 0.68rem; color: var(--text-sub); font-weight: 400; text-align: center; }
+
+    /* ===== お知らせバー ===== */
+    .notice-bar {
+      background: #fff3cd;
+      color: #856404;
+      text-align: center;
+      font-size: 0.88rem;
+      font-weight: 600;
+      padding: 8px 20px;
+      border-bottom: 1px solid #ffc107;
+    }
+    .notice-bar a { color: #856404; text-decoration: underline; }
+
+    /* ===== ヒーロー / FV ===== */
+    .hero {
+      background: linear-gradient(135deg, #0d3d72 0%, #1a6bbf 60%, #2589e8 100%);
+      color: #fff;
+      padding: 70px 0 60px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 400px; height: 400px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 50%;
+    }
+    .hero__inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+    .hero__tag {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+    .hero__catch {
+      font-size: 2rem;
+      font-weight: 900;
+      line-height: 1.4;
+      margin-bottom: 16px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    .hero__catch em {
+      color: var(--accent);
+      font-style: normal;
+    }
+    .hero__sub {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.9);
+      margin-bottom: 28px;
+      line-height: 1.7;
+    }
+    .hero__badges {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 28px;
+    }
+    .hero__badge {
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 6px;
+      padding: 8px 14px;
+      text-align: center;
+      backdrop-filter: blur(4px);
+    }
+    .hero__badge-num {
+      display: block;
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: var(--accent);
+    }
+    .hero__badge-label { font-size: 0.75rem; color: rgba(255,255,255,0.85); }
+    .hero__cta-wrap { display: flex; flex-direction: column; gap: 12px; }
+    .hero__img {
+      width: 100%;
+      height: 340px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    }
+
+    /* ===== ペインポイント ===== */
+    .pain__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-bottom: 36px;
+    }
+    .pain__item {
+      background: #fff;
+      border-left: 4px solid var(--primary);
+      padding: 16px 20px;
+      border-radius: 0 8px 8px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .pain__item::before {
+      content: '😟';
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+    .pain__arrow {
+      text-align: center;
+      font-size: 2rem;
+      color: var(--accent);
+      margin: 20px 0;
+    }
+    .pain__resolve {
+      background: var(--primary);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+
+    /* ===== 特徴 ===== */
+    .features__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+    .feature-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 28px 24px;
+      box-shadow: 0 3px 16px rgba(0,0,0,0.07);
+      border-top: 4px solid var(--primary);
+      transition: transform 0.2s;
+    }
+    .feature-card:hover { transform: translateY(-4px); }
+    .feature-card__icon {
+      font-size: 2.4rem;
+      margin-bottom: 12px;
+    }
+    .feature-card__num {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: 0.1em;
+      margin-bottom: 6px;
+    }
+    .feature-card__title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+    .feature-card__body {
+      font-size: 0.9rem;
+      color: var(--text-sub);
+      line-height: 1.7;
+    }
+
+    /* ===== コース ===== */
+    .courses__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .course-card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+      display: flex;
+      flex-direction: column;
+    }
+    .course-card__header {
+      background: var(--primary);
+      color: #fff;
+      padding: 16px;
+      text-align: center;
+    }
+    .course-card__grade {
+      font-size: 0.78rem;
+      opacity: 0.85;
+      margin-bottom: 4px;
+    }
+    .course-card__name {
+      font-size: 1.05rem;
+      font-weight: 700;
+    }
+    .course-card__body {
+      padding: 20px;
+      flex: 1;
+    }
+    .course-card__list {
+      list-style: none;
+      font-size: 0.88rem;
+      color: var(--text-sub);
+    }
+    .course-card__list li {
+      padding: 5px 0;
+      border-bottom: 1px dashed var(--border);
+      display: flex;
+      gap: 8px;
+    }
+    .course-card__list li::before { content: '✓'; color: var(--green); font-weight: 700; flex-shrink: 0; }
+
+    /* ===== 実績数字 ===== */
+    .stats__grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    .stat-card {
+      text-align: center;
+      padding: 28px 16px;
+    }
+    .stat-card__num {
+      font-size: 2.6rem;
+      font-weight: 900;
+      color: var(--accent);
+      line-height: 1;
+    }
+    .stat-card__unit { font-size: 1.2rem; }
+    .stat-card__label {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.85);
+      margin-top: 8px;
+    }
+
+    /* ===== 保護者の声 ===== */
+    .voices__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .voice-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 3px 14px rgba(0,0,0,0.07);
+      position: relative;
+    }
+    .voice-card::before {
+      content: '"';
+      position: absolute;
+      top: -10px;
+      left: 20px;
+      font-size: 4rem;
+      color: var(--primary);
+      opacity: 0.15;
+      line-height: 1;
+      font-family: Georgia, serif;
+    }
+    .voice-card__header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+    .voice-card__avatar {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      overflow: hidden;
+    }
+    .voice-card__name {
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+    .voice-card__grade {
+      font-size: 0.78rem;
+      color: var(--text-sub);
+    }
+    .voice-card__stars {
+      color: var(--accent);
+      font-size: 0.85rem;
+      margin-bottom: 4px;
+    }
+    .voice-card__text {
+      font-size: 0.88rem;
+      color: var(--text-sub);
+      line-height: 1.7;
+    }
+
+    /* ===== 講師紹介 ===== */
+    .teachers__grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+    }
+    .teacher-card {
+      text-align: center;
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+    }
+    .teacher-card__photo {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin: 0 auto 12px;
+      overflow: hidden;
+    }
+    .teacher-card__name {
+      font-weight: 700;
+      font-size: 0.95rem;
+      margin-bottom: 6px;
+    }
+    .teacher-card__subjects {
+      font-size: 0.78rem;
+      color: var(--primary);
+      background: var(--bg-light);
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+
+    /* ===== 無料体験 ===== */
+    .trial {
+      background: linear-gradient(135deg, #fff3cd 0%, #fff9e6 100%);
+      border: 2px solid var(--accent);
+      border-radius: 16px;
+      padding: 40px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .trial::before {
+      content: '今すぐ無料で体験！';
+      position: absolute;
+      top: 14px; right: -30px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 4px 50px;
+      transform: rotate(25deg);
+    }
+    .trial__badge {
+      display: inline-block;
+      background: #e74c3c;
+      color: #fff;
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 4px 16px;
+      border-radius: 20px;
+      margin-bottom: 14px;
+    }
+    .trial__title {
+      font-size: 1.7rem;
+      font-weight: 900;
+      color: var(--text-main);
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+    .trial__title em {
+      color: #e74c3c;
+      font-style: normal;
+    }
+    .trial__desc {
+      color: var(--text-sub);
+      margin-bottom: 24px;
+      font-size: 0.95rem;
+    }
+    .trial__items {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 28px;
+    }
+    .trial__item {
+      background: #fff;
+      border-radius: 10px;
+      padding: 16px 24px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      min-width: 140px;
+    }
+    .trial__item-icon { font-size: 1.6rem; margin-bottom: 6px; }
+    .trial__item-label { font-size: 0.78rem; color: var(--text-sub); margin-bottom: 4px; }
+    .trial__item-value { font-weight: 700; font-size: 1rem; color: var(--text-main); }
+    .trial__period {
+      font-size: 0.88rem;
+      color: #c0392b;
+      font-weight: 700;
+      background: #fdecea;
+      display: inline-block;
+      padding: 6px 18px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+    }
+    .trial__referral {
+      font-size: 0.82rem;
+      color: var(--text-sub);
+      margin-top: 14px;
+    }
+    .trial__referral strong { color: var(--green); }
+
+    /* ===== FAQ ===== */
+    .faq__list { max-width: 720px; margin: 0 auto; }
+    .faq__item {
+      border-bottom: 1px solid var(--border);
+    }
+    .faq__q {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      padding: 18px 0;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--text-main);
+    }
+    .faq__q-icon {
+      width: 28px;
+      height: 28px;
+      background: var(--primary);
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+    }
+    .faq__a {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      padding: 0 0 18px 42px;
+      font-size: 0.9rem;
+      color: var(--text-sub);
+      line-height: 1.7;
+    }
+
+    /* ===== アクセス ===== */
+    .access__inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+    .access__info { }
+    .access__title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+    .access__dl { }
+    .access__dl dt {
+      font-weight: 600;
+      font-size: 0.85rem;
+      color: var(--text-sub);
+      margin-top: 14px;
+    }
+    .access__dl dd {
+      font-size: 0.95rem;
+      margin-top: 2px;
+    }
+    .access__map {
+      height: 280px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 3px 14px rgba(0,0,0,0.1);
+    }
+
+    /* ===== 申込フォーム ===== */
+    .form-section {
+      background: var(--bg-light);
+    }
+    .form-box {
+      max-width: 640px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 14px;
+      padding: 36px 36px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+    .form-box__title {
+      text-align: center;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 24px;
+    }
+    .form-group {
+      margin-bottom: 18px;
+    }
+    .form-group label {
+      display: block;
+      font-size: 0.88rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: var(--text-main);
+    }
+    .form-group label .required {
+      background: #e74c3c;
+      color: #fff;
+      font-size: 0.7rem;
+      padding: 1px 6px;
+      border-radius: 3px;
+      margin-left: 6px;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 10px 14px;
+      font-size: 0.95rem;
+      font-family: inherit;
+      color: var(--text-main);
+      background: #fff;
+      transition: border-color 0.2s;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(26,95,168,0.12);
+    }
+    .form-group textarea { resize: vertical; min-height: 90px; }
+    .form__submit {
+      width: 100%;
+      padding: 16px;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+      box-shadow: 0 4px 14px rgba(245,166,35,0.4);
+    }
+    .form__submit:hover { background: var(--accent-dark); transform: translateY(-2px); }
+    .form__note {
+      font-size: 0.78rem;
+      color: var(--text-sub);
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    /* ===== フッター ===== */
+    .footer {
+      background: #1a2a3a;
+      color: rgba(255,255,255,0.8);
+      padding: 40px 0 20px;
+    }
+    .footer__inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 30px;
+    }
+    .footer__logo {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    .footer__desc {
+      font-size: 0.85rem;
+      line-height: 1.7;
+    }
+    .footer__nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 24px;
+      list-style: none;
+    }
+    .footer__nav a {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.7);
+      transition: color 0.2s;
+    }
+    .footer__nav a:hover { color: #fff; }
+    .footer__bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 16px;
+      text-align: center;
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.4);
+    }
+
+    /* ===== スティッキーCTAバー ===== */
+    .sticky-cta {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #fff;
+      border-top: 3px solid var(--primary);
+      box-shadow: 0 -4px 16px rgba(0,0,0,0.12);
+      z-index: 200;
+      padding: 10px 16px;
+      display: none; /* JSで制御 */
+    }
+    .sticky-cta.is-visible { display: block; }
+    .sticky-cta__inner {
+      max-width: 700px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      align-items: center;
+    }
+    .sticky-cta__text {
+      font-size: 0.78rem;
+      color: var(--text-sub);
+      display: none;
+    }
+    .sticky-cta__btn {
+      display: block;
+      text-align: center;
+      padding: 12px 8px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .sticky-cta__btn--orange {
+      background: var(--accent);
+      color: #fff;
+      box-shadow: 0 3px 8px rgba(245,166,35,0.4);
+    }
+    .sticky-cta__btn--orange:hover { background: var(--accent-dark); }
+    .sticky-cta__btn--blue {
+      background: var(--primary);
+      color: #fff;
+      box-shadow: 0 3px 8px rgba(26,95,168,0.3);
+    }
+    .sticky-cta__btn--blue:hover { background: var(--primary-dark); }
+    .sticky-cta__btn small { display: block; font-size: 0.7rem; opacity: 0.85; }
+
+    /* ===== レスポンシブ ===== */
+    @media (max-width: 768px) {
+      .section { padding: 40px 0; }
+      .section-title { font-size: 1.4rem; }
+
+      .hero__inner { grid-template-columns: 1fr; }
+      .hero__img { height: 220px; }
+      .hero__catch { font-size: 1.55rem; }
+      .hero__badges { gap: 8px; }
+      .hero__badge-num { font-size: 1.2rem; }
+
+      .pain__list { grid-template-columns: 1fr; }
+      .features__grid { grid-template-columns: 1fr; }
+      .courses__grid { grid-template-columns: 1fr; }
+      .stats__grid { grid-template-columns: repeat(2, 1fr); }
+      .voices__grid { grid-template-columns: 1fr; }
+      .teachers__grid { grid-template-columns: repeat(3, 1fr); }
+      .access__inner { grid-template-columns: 1fr; }
+      .footer__inner { grid-template-columns: 1fr; }
+
+      .sticky-cta__inner { grid-template-columns: 1fr 1fr; }
+
+      .trial { padding: 28px 20px; }
+      .trial__title { font-size: 1.3rem; }
+      .trial__items { gap: 10px; }
+      .trial__item { min-width: 120px; padding: 12px 16px; }
+
+      .form-box { padding: 24px 18px; }
+
+      .header__logo-text { font-size: 0.95rem; }
+      .header__tel { font-size: 1.05rem; }
+    }
+
+    @media (max-width: 480px) {
+      .teachers__grid { grid-template-columns: repeat(2, 1fr); }
+      .hero__catch { font-size: 1.3rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- お知らせバー -->
+  <div class="notice-bar">
+    🌸 春期特別無料講習会 受付中！ 3/25（火）〜4/7（月） ｜ <a href="#trial">詳細はこちら &rarr;</a>
+  </div>
+
+  <!-- ヘッダー -->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__logo">
+          <div class="img-placeholder header__logo-img">ロゴ</div>
+          <div class="header__logo-text">
+            Dr.関塾 祐天寺校
+            <small>完全個別指導・学習塾</small>
+          </div>
+        </div>
+        <div class="header__tel">
+          <a href="tel:0357341901">📞 03-5734-1901</a>
+          <small>受付時間 15:00〜21:50（月〜土）</small>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ヒーロー / FV -->
+  <section class="hero" id="top">
+    <div class="container">
+      <div class="hero__inner">
+        <div class="hero__content">
+          <span class="hero__tag">祐天寺・目黒区の個別指導塾 ｜ 開校9年</span>
+          <h1 class="hero__catch">
+            「わかった！」が<br>増える個別指導。<br>
+            <em>成績向上・志望校合格</em>へ。
+          </h1>
+          <p class="hero__sub">
+            一人ひとりのペースとレベルに完全対応。<br>
+            勉強の悩みを、一緒に解決しましょう。
+          </p>
+          <div class="hero__badges">
+            <div class="hero__badge">
+              <span class="hero__badge-num">9<span style="font-size:1rem">年</span></span>
+              <span class="hero__badge-label">開校実績</span>
+            </div>
+            <div class="hero__badge">
+              <span class="hero__badge-num">2:1</span>
+              <span class="hero__badge-label">完全個別指導</span>
+            </div>
+            <div class="hero__badge">
+              <span class="hero__badge-num">0<span style="font-size:1rem">円</span></span>
+              <span class="hero__badge-label">体験授業</span>
+            </div>
+          </div>
+          <div class="hero__cta-wrap">
+            <a href="#form" class="btn btn--primary btn--lg">無料体験授業を申し込む →</a>
+            <a href="tel:0357341901" class="btn btn--outline btn--lg" style="background:rgba(255,255,255,0.15); color:#fff; border-color:rgba(255,255,255,0.5);">📞 電話で問い合わせる</a>
+          </div>
+        </div>
+        <div class="hero__img">
+          <div class="img-placeholder" style="width:100%; height:100%;">
+            教室・授業風景の写真<br>（推奨: 明るく清潔感のある教室、<br>講師と生徒が向き合う場面）
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ペインポイント -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="title-deco">こんなお悩みありませんか？</span></h2>
+      <p class="section-subtitle">多くの保護者様・生徒さんが入塾前に抱えていた悩みです</p>
+      <div class="pain__list">
+        <div class="pain__item">成績が上がらない、何が問題かわからない</div>
+        <div class="pain__item">集団塾では質問できず、授業についていけない</div>
+        <div class="pain__item">高校受験・大学受験に向けて何から始めればいい？</div>
+        <div class="pain__item">内申点を上げたいが、どう対策すればいいかわからない</div>
+        <div class="pain__item">子どものやる気がなく、学習習慣が身についていない</div>
+        <div class="pain__item">塾選びで失敗したくない。まず試してみたい</div>
+      </div>
+      <div class="pain__arrow">↓</div>
+      <div class="pain__resolve">
+        Dr.関塾 祐天寺校なら、すべての悩みに<strong>「完全個別指導」</strong>で向き合います。
+      </div>
+    </div>
+  </section>
+
+  <!-- 特徴 -->
+  <section class="section section--blue" id="features">
+    <div class="container">
+      <h2 class="section-title"><span class="title-deco">Dr.関塾が選ばれる4つの理由</span></h2>
+      <p class="section-subtitle">開校9年、地域に根ざした個別指導の強み</p>
+      <div class="features__grid">
+        <div class="feature-card">
+          <div class="feature-card__icon">👨‍🏫</div>
+          <div class="feature-card__num">REASON 01</div>
+          <div class="feature-card__title">完全個別指導（生徒2名：講師1名）</div>
+          <div class="feature-card__body">
+            講師1名が生徒2名を担当する完全個別指導。授業のペースは生徒に合わせ、「わからない」をその場で解決。集団授業では得られない、きめ細やかな指導を提供します。
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">📐</div>
+          <div class="feature-card__num">REASON 02</div>
+          <div class="feature-card__title">学力向上＋人格教育の総合指導</div>
+          <div class="feature-card__body">
+            成績向上だけでなく「物事を判断する力」を育む総合的な指導を実施。礼儀・道徳・常識も含めた人格教育で、社会に出ても通用する力を育てます。
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">🎓</div>
+          <div class="feature-card__num">REASON 03</div>
+          <div class="feature-card__title">IT業界出身の塾頭による進学相談</div>
+          <div class="feature-card__body">
+            IT業界30年の経験を持つ塾頭が、東京都・神奈川県の私立中高情報を幅広く収集。受験・進学の最新情報をもとに、お子さまに合った進路を一緒に考えます。
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">🌙</div>
+          <div class="feature-card__num">REASON 04</div>
+          <div class="feature-card__title">夜間も安心の明るい教室環境</div>
+          <div class="feature-card__body">
+            夜間もしっかりライトアップされた安全な通塾環境。広めの机スペースで集中しやすいブース型自習スペースを完備。授業・進路・日程相談まで対応する受付スタッフが常駐します。
+          </div>
+        </div>
+      </div>
+      <div class="cta-block">
+        <a href="#form" class="btn btn--primary btn--lg">無料体験授業を申し込む →</a>
+        <p class="cta-note">体験授業は完全無料（教材費1,000円のみ）・90分×2回</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- コース紹介 -->
+  <section class="section" id="courses">
+    <div class="container">
+      <h2 class="section-title"><span class="title-deco">コース紹介</span></h2>
+      <p class="section-subtitle">小学生から高校生まで、それぞれに合ったコースをご用意</p>
+      <div class="courses__grid">
+        <div class="course-card">
+          <div class="course-card__header">
+            <div class="course-card__grade">小学生対象</div>
+            <div class="course-card__name">小学生コース</div>
+          </div>
+          <div class="course-card__body">
+            <ul class="course-card__list">
+              <li>算数・国語・英語・理科・社会</li>
+              <li>基礎学力の定着・先取り学習</li>
+              <li>中学受験対策にも対応</li>
+              <li>学習習慣の形成をサポート</li>
+            </ul>
+          </div>
+        </div>
+        <div class="course-card">
+          <div class="course-card__header" style="background: #c0392b;">
+            <div class="course-card__grade">中学生対象</div>
+            <div class="course-card__name">中学生コース</div>
+          </div>
+          <div class="course-card__body">
+            <ul class="course-card__list">
+              <li>数学・英語・国語・理科・社会</li>
+              <li>内申点対策（定期テスト対策）</li>
+              <li>高校受験・志望校合格対策</li>
+              <li>情報（プログラミング）も対応</li>
+            </ul>
+          </div>
+        </div>
+        <div class="course-card">
+          <div class="course-card__header" style="background: var(--green);">
+            <div class="course-card__grade">高校生対象</div>
+            <div class="course-card__name">高校生コース</div>
+          </div>
+          <div class="course-card__body">
+            <ul class="course-card__list">
+              <li>数学・英語・国語など主要5科目</li>
+              <li>大学受験・共通テスト対策</li>
+              <li>総合型選抜・推薦入試の相談</li>
+              <li>弱点単元の集中強化</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="cta-block">
+        <a href="#form" class="btn btn--primary">まずは無料体験で試してみる →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 実績数字 -->
+  <section class="section section--dark" id="results">
+    <div class="container">
+      <h2 class="section-title section-title--white"><span class="title-deco">Dr.関塾 祐天寺校の実績</span></h2>
+      <p class="section-subtitle section-subtitle--white">開校から9年、地域の生徒さんとともに積み上げてきた実績</p>
+      <div class="stats__grid">
+        <div class="stat-card">
+          <div class="stat-card__num">9<span class="stat-card__unit">年</span></div>
+          <div class="stat-card__label">開校実績<br>（2016年〜）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__num">〇〇<span class="stat-card__unit">名</span></div>
+          <div class="stat-card__label">指導生徒<br>累計数</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__num">〇〇<span class="stat-card__unit">校</span></div>
+          <div class="stat-card__label">合格実績<br>（高校・大学）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__num">〇〇<span class="stat-card__unit">%</span></div>
+          <div class="stat-card__label">保護者<br>満足度</div>
+        </div>
+      </div>
+      <p style="text-align:center; font-size:0.78rem; color:rgba(255,255,255,0.4); margin-top:20px;">※ 〇〇は実績データ確認後に入力してください</p>
+    </div>
+  </section>
+
+  <!-- 合格実績 -->
+  <section class="section section--gray" id="achievement">
+    <div class="container">
+      <h2 class="section-title"><span class="title-deco">合格実績</span></h2>
+      <p class="section-subtitle">Dr.関塾 祐天寺校から合格した学校（一部）</p>
+      <div class="img-placeholder" style="height: 200px; border-radius:10px;">
+        合格実績リスト or バナー<br>（高校・大学の合格校名を掲載予定。実績データをご提供ください。）
+      </div>
+      <div class="cta-block">
+        <a href="#form" class="btn btn--primary">無料体験授業を申し込む →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 保護者・生徒の声 -->
+  <section class="section" id="voices">
+    <div class="container">
+      <h2 class="section-title"><span class="title-deco">保護者・生徒の声</span></h2>
+      <p class="section-subtitle">実際に通っている生徒・保護者の方からのコメントです</p>
+      <div class="voices__grid">
+        <div class="voice-card">
+          <div class="voice-card__header">
+            <div class="voice-card__avatar">
+              <div class="img-placeholder" style="width:52px; height:52px; border-radius:50%;">写真</div>
+            </div>
+            <div>
+              <div class="voice-card__stars">★★★★★</div>
+              <div class="voice-card__name">A.Mさんの保護者</div>
+              <div class="voice-card__grade">中学3年生 / 高校受験合格</div>
+            </div>
+          </div>
+          <p class="voice-card__text">
+            入塾前は数学が苦手で定期テストもギリギリでした。先生がいつも丁寧に教えてくださり、3ヶ月で20点以上アップ。第一志望の高校に合格できて本当に感謝しています。
+          </p>
+        </div>
+        <div class="voice-card">
+          <div class="voice-card__header">
+            <div class="voice-card__avatar">
+              <div class="img-placeholder" style="width:52px; height:52px; border-radius:50%;">写真</div>
+            </div>
+            <div>
+              <div class="voice-card__stars">★★★★★</div>
+              <div class="voice-card__name">K.Tさんの保護者</div>
+              <div class="voice-card__grade">中学1年生 / 内申点対策</div>
+            </div>
+          </div>
+          <p class="voice-card__text">
+            集団塾では質問できないタイプだったので、個別指導を探していました。Dr.関塾は先生との距離が近く、わからないことをすぐ聞ける環境が子どもに合っています。内申もじわじわ上がってきました。
+          </p>
+        </div>
+        <div class="voice-card">
+          <div class="voice-card__header">
+            <div class="voice-card__avatar">
+              <div class="img-placeholder" style="width:52px; height:52px; border-radius:50%;">写真</div>
+            </div>
+            <div>
+              <div class="voice-card__stars">★★★★★</div>
+              <div class="voice-card__name">R.Sさん本人</div>
+              <div class="voice-card__grade">小学6年生 / 中学準備</div>
+            </div>
+          </div>
+          <p class="voice-card__text">
+            算数が全然できなかったけど、先生がわかるまで一緒に考えてくれるから楽しくなってきた。中学でも続けたいと思っています！
+          </p>
+        </div>
+      </div>
+      <p style="text-align:center; font-size:0.78rem; color:var(--text-sub); margin-top:16px;">※ 上記の声は実際の保護者・生徒の声をもとに作成（実名・許諾確認後に更新してください）</p>
+    </div>
+  </section>
+
+  <!-- 講師紹介 -->
+  <section class="section section--blue" id="teachers">
+    <div class="container">
+      <h2 class="section-title"><span class="title-deco">講師紹介</span></h2>
+      <p class="section-subtitle">経験豊富な講師陣が、一人ひとりに丁寧な指導を提供します</p>
+      <div class="teachers__grid">
+        <div class="teacher-card">
+          <div class="teacher-card__photo">
+            <div class="img-placeholder" style="width:80px; height:80px; border-radius:50%;">写真</div>
+          </div>
+          <div class="teacher-card__name">U・T 先生</div>
+          <div class="teacher-card__subjects">数学・英語・理科</div>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-card__photo">
+            <div class="img-placeholder" style="width:80px; height:80px; border-radius:50%;">写真</div>
+          </div>
+          <div class="teacher-card__name">S・K 先生</div>
+          <div class="teacher-card__subjects">数学・英語・社会</div>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-card__photo">
+            <div class="img-placeholder" style="width:80px; height:80px; border-radius:50%;">写真</div>
+          </div>
+          <div class="teacher-card__name">Y・R 先生</div>
+          <div class="teacher-card__subjects">英語・国語</div>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-card__photo">
+            <div class="img-placeholder" style="width:80px; height:80px; border-radius:50%;">写真</div>
+          </div>
+          <div class="teacher-card__name">M・S 先生</div>
+          <div class="teacher-card__subjects">数学・算数</div>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-card__photo">
+            <div class="img-placeholder" style="width:80px; height:80px; border-radius:50%;">写真</div>
+          </div>
+          <div class="teacher-card__name">K・Y 先生</div>
+          <div class="teacher-card__subjects">数学・算数・英語・国語</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 無料体験・料金 -->
+  <section class="section" id="trial">
+    <div class="container">
+      <h2 class="section-title"><span class="title-deco">春期特別無料講習会・体験授業</span></h2>
+      <p class="section-subtitle">まずは無料で、Dr.関塾の授業を体験してください</p>
+      <div class="trial">
+        <span class="trial__badge">🌸 春期限定キャンペーン実施中</span>
+        <h3 class="trial__title">体験授業が<em>完全無料</em>！</h3>
+        <p class="trial__desc">通常1,000円の体験授業が、春期特別講習会期間中は教材費も含め完全無料でお試しいただけます。</p>
+        <div class="trial__items">
+          <div class="trial__item">
+            <div class="trial__item-icon">📚</div>
+            <div class="trial__item-label">授業時間</div>
+            <div class="trial__item-value">90分 × 2回</div>
+          </div>
+          <div class="trial__item">
+            <div class="trial__item-icon">👥</div>
+            <div class="trial__item-label">指導形式</div>
+            <div class="trial__item-value">2名：1名の個別</div>
+          </div>
+          <div class="trial__item">
+            <div class="trial__item-icon">📝</div>
+            <div class="trial__item-label">対応科目</div>
+            <div class="trial__item-value">数学・英語・国語など</div>
+          </div>
+          <div class="trial__item">
+            <div class="trial__item-icon">💰</div>
+            <div class="trial__item-label">費用</div>
+            <div class="trial__item-value" style="color:#e74c3c; font-size:1.3rem;">¥0</div>
+          </div>
+        </div>
+        <div class="trial__period">📅 春期講習期間：2025年3月25日（火）〜4月7日（月）</div>
+        <a href="#form" class="btn btn--primary btn--lg">今すぐ無料体験を申し込む →</a>
+        <p class="trial__referral">
+          👫 お友達紹介制度あり：紹介者・被紹介者双方に<strong>図書カード3,000円分</strong>プレゼント！<br>
+          卒塾生の紹介も対象です。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--gray" id="faq">
+    <div class="container">
+      <h2 class="section-title"><span class="title-deco">よくある質問</span></h2>
+      <p class="section-subtitle">入塾検討中の方からよくいただく質問をまとめました</p>
+      <div class="faq__list">
+        <div class="faq__item">
+          <div class="faq__q">
+            <span class="faq__q-icon">Q</span>
+            <span>体験授業は本当に無料ですか？</span>
+          </div>
+          <div class="faq__a">
+            はい、春期特別無料講習会期間中（3/25〜4/7）は教材費も含めて完全無料です。通常期の体験授業は教材費1,000円（税込）のみご負担いただきます。90分×2回、しっかり体験していただけます。
+          </div>
+        </div>
+        <div class="faq__item">
+          <div class="faq__q">
+            <span class="faq__q-icon">Q</span>
+            <span>授業についていけるか心配です。</span>
+          </div>
+          <div class="faq__a">
+            ご安心ください。体験授業の前に「どの科目・どの単元が苦手か」を事前にヒアリングし、生徒さんのレベルに合った授業内容でスタートします。完全個別指導なので、わかるまで丁寧に対応します。
+          </div>
+        </div>
+        <div class="faq__item">
+          <div class="faq__q">
+            <span class="faq__q-icon">Q</span>
+            <span>通常の月謝・授業料を教えてください。</span>
+          </div>
+          <div class="faq__a">
+            コース・科目数・授業回数によって異なります。詳しくは体験授業後の面談でご説明いたします。まずはお気軽にお問い合わせください。
+          </div>
+        </div>
+        <div class="faq__item">
+          <div class="faq__q">
+            <span class="faq__q-icon">Q</span>
+            <span>担当講師を変更することはできますか？</span>
+          </div>
+          <div class="faq__a">
+            はい、可能です。講師との相性は大切ですので、遠慮なくご相談ください。生徒さんが最も学びやすい環境をご用意します。
+          </div>
+        </div>
+        <div class="faq__item">
+          <div class="faq__q">
+            <span class="faq__q-icon">Q</span>
+            <span>授業時間帯を教えてください。</span>
+          </div>
+          <div class="faq__a">
+            平日（月〜金）は 15:20〜21:50 の4時間帯、春期講習期間（月〜土）は 10:20〜21:50 の7時間帯でお選びいただけます。90分1コマです。
+          </div>
+        </div>
+        <div class="faq__item">
+          <div class="faq__q">
+            <span class="faq__q-icon">Q</span>
+            <span>最寄り駅と通塾方法を教えてください。</span>
+          </div>
+          <div class="faq__a">
+            東急東横線「祐天寺駅」から徒歩圏内です（詳細はアクセスセクションをご参照ください）。夜間もライトアップされており、安全に通塾いただけます。
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- アクセス -->
+  <section class="section" id="access">
+    <div class="container">
+      <h2 class="section-title"><span class="title-deco">教室案内・アクセス</span></h2>
+      <div class="access__inner">
+        <div class="access__info">
+          <h3 class="access__title">Dr.関塾 祐天寺校</h3>
+          <dl class="access__dl">
+            <dt>住所</dt>
+            <dd>〒153-0065<br>東京都目黒区中町2-38-28 2F</dd>
+            <dt>電話</dt>
+            <dd><a href="tel:0357341901" style="color:var(--primary); font-weight:700;">03-5734-1901</a></dd>
+            <dt>FAX</dt>
+            <dd>03-5734-1903</dd>
+            <dt>メール</dt>
+            <dd><a href="mailto:kanjuku.yutenji@gmail.com" style="color:var(--primary);">kanjuku.yutenji@gmail.com</a></dd>
+            <dt>最寄り駅</dt>
+            <dd>東急東横線「祐天寺駅」</dd>
+            <dt>受付時間</dt>
+            <dd>月〜金 15:00〜21:50<br>土 10:00〜21:50</dd>
+          </dl>
+        </div>
+        <div>
+          <div class="access__map">
+            <div class="img-placeholder" style="width:100%; height:280px; border-radius:10px;">
+              Googleマップ埋め込み<br>（座標: 35.6353052, 139.6908238）<br>
+              &lt;iframe&gt; タグで差し替えてください
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 申込フォーム -->
+  <section class="section form-section" id="form">
+    <div class="container">
+      <h2 class="section-title"><span class="title-deco">無料体験授業のお申込み</span></h2>
+      <p class="section-subtitle">フォームにご入力いただくと、2営業日以内にご連絡いたします</p>
+      <div class="form-box">
+        <h3 class="form-box__title">🌸 春期特別無料講習会 申込フォーム</h3>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label>お子さまのお名前（フリガナ）<span class="required">必須</span></label>
+            <input type="text" name="student_name" placeholder="例：関塾 太郎（カンジュク タロウ）" required>
+          </div>
+          <div class="form-group">
+            <label>学年<span class="required">必須</span></label>
+            <select name="grade" required>
+              <option value="">選択してください</option>
+              <option>小学1年生</option>
+              <option>小学2年生</option>
+              <option>小学3年生</option>
+              <option>小学4年生</option>
+              <option>小学5年生</option>
+              <option>小学6年生</option>
+              <option>中学1年生</option>
+              <option>中学2年生</option>
+              <option>中学3年生</option>
+              <option>高校1年生</option>
+              <option>高校2年生</option>
+              <option>高校3年生</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>体験希望科目<span class="required">必須</span></label>
+            <select name="subject" required>
+              <option value="">選択してください</option>
+              <option>数学・算数</option>
+              <option>英語</option>
+              <option>国語</option>
+              <option>理科</option>
+              <option>社会</option>
+              <option>情報</option>
+              <option>相談して決めたい</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>保護者のお名前<span class="required">必須</span></label>
+            <input type="text" name="parent_name" placeholder="例：関塾 花子" required>
+          </div>
+          <div class="form-group">
+            <label>電話番号<span class="required">必須</span></label>
+            <input type="tel" name="phone" placeholder="例：090-1234-5678" required>
+          </div>
+          <div class="form-group">
+            <label>メールアドレス</label>
+            <input type="email" name="email" placeholder="例：example@email.com">
+          </div>
+          <div class="form-group">
+            <label>ご希望日時・ご質問など</label>
+            <textarea name="message" placeholder="ご希望の曜日・時間帯、お子さまの状況、ご質問などがあればご記入ください"></textarea>
+          </div>
+          <button type="submit" class="form__submit">無料体験授業を申し込む →</button>
+          <p class="form__note">※ 入力内容は個人情報保護方針に従って取り扱います。<br>電話でのお申込みは <a href="tel:0357341901" style="color:var(--primary);">03-5734-1901</a> まで。</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__logo">Dr.関塾 祐天寺校</div>
+          <p class="footer__desc">
+            完全個別指導・学習塾<br>
+            〒153-0065 東京都目黒区中町2-38-28 2F<br>
+            TEL: 03-5734-1901<br>
+            kanjuku.yutenji@gmail.com
+          </p>
+        </div>
+        <div>
+          <ul class="footer__nav">
+            <li><a href="#top">トップ</a></li>
+            <li><a href="#features">選ばれる理由</a></li>
+            <li><a href="#courses">コース紹介</a></li>
+            <li><a href="#results">合格実績</a></li>
+            <li><a href="#voices">保護者の声</a></li>
+            <li><a href="#teachers">講師紹介</a></li>
+            <li><a href="#trial">無料体験</a></li>
+            <li><a href="#faq">よくある質問</a></li>
+            <li><a href="#access">アクセス</a></li>
+            <li><a href="#form">お申込み</a></li>
+            <li><a href="https://yutenji.dr-kanjuku.net/" target="_blank" rel="noopener">公式サイト</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        &copy; 2026 Dr.関塾 祐天寺校 All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- スティッキーCTAバー -->
+  <div class="sticky-cta" id="stickyCta">
+    <div class="sticky-cta__inner">
+      <a href="#form" class="sticky-cta__btn sticky-cta__btn--orange">
+        🌸 無料体験を申し込む
+        <small>春期特別無料講習会受付中</small>
+      </a>
+      <a href="tel:0357341901" class="sticky-cta__btn sticky-cta__btn--blue">
+        📞 電話で問い合わせる
+        <small>03-5734-1901</small>
+      </a>
+    </div>
+  </div>
+
+  <!-- JS: スティッキーCTA制御・スムーズスクロール -->
+  <script>
+    // スティッキーCTA: FVスクロール後に表示
+    (function() {
+      var stickyCta = document.getElementById('stickyCta');
+      var hero = document.querySelector('.hero');
+
+      function updateSticky() {
+        if (!hero) return;
+        var heroBottom = hero.getBoundingClientRect().bottom;
+        if (heroBottom < 0) {
+          stickyCta.classList.add('is-visible');
+        } else {
+          stickyCta.classList.remove('is-visible');
+        }
+      }
+
+      window.addEventListener('scroll', updateSticky, { passive: true });
+      updateSticky();
+    })();
+
+    // スムーズスクロール（anchorリンク）
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+      anchor.addEventListener('click', function(e) {
+        var targetId = this.getAttribute('href').slice(1);
+        var target = document.getElementById(targetId);
+        if (target) {
+          e.preventDefault();
+          var headerHeight = document.querySelector('.header').offsetHeight;
+          var targetTop = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 10;
+          window.scrollTo({ top: targetTop, behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
